@@ -13,7 +13,7 @@
       "-DARDUINO_RUNNING_CORE=1",
       "-DARDUINO_EVENT_RUNNING_CORE=1",
       "-DARDUINO_USB_CDC_ON_BOOT=0",
-      "-DESP32_4848S040C",
+      "-DESP32_4848S040C3R",
       "-DLCD_WIDTH=480",
       "-DLCD_HEIGHT=480",
       "-DLCD_BCKL_GPIO=38",
@@ -31,8 +31,9 @@
       "-DBUTTON_BOOT_GPIO=0",
       "-DHAS_LED",
       "-DLED_GPIO=16",
-      "-DHAS_RELAY",
-      "-DRELAY_GPIO=17"
+      "-DHAS_RELAYS",
+      "-DNUM_RELAY=3",
+      "-DRELAY_BASE_GPIO=17"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
@@ -56,7 +57,7 @@
     "arduino",
     "espidf"
   ],
-  "name": "esp32-8048S070C",
+  "name": "esp32-4848S040C3R",
   "upload": {
     "flash_size": "16MB",
     "maximum_ram_size": 327680,
@@ -66,6 +67,6 @@
     "require_upload_port": true,
     "speed": 460800
   },
-  "url": "https://www.aliexpress.com/item/1005005928865239.html",
+  "url": "https://www.aliexpress.com/item/1005006302276974.html",
   "vendor": "Sunton"
 }
