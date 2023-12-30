@@ -104,3 +104,73 @@ The table below provides some explanation of the variable names. These definitio
 |                                     |                                                                 |
 | BOARD_HAS_RELAYS                    | The board has replays                                           |
 | RELAY_BASE_GPIO                     | The GPIO of the first relay                                     |
+
+## Appendix: Board details
+
+### ESP32_1732S019 N/C
+
+- USB-C
+
+### ESP32-2424S012 N/C
+
+- USB-C
+- I2C: 1 x SH1.0 4p
+- Battery interface: JST1.25 2p
+
+![ESP32-2424S012 front](assets/images/esp32-2424S012-front.png)
+![ESP32-2424S012 back](assets/images/esp32-2424S012-back.png)
+
+### ESP32-2432S024 N/R/C
+
+- Micro USB
+- I2C: 2 x JST1.25 4p
+- Power + Serial: JST1.25 4p
+- Speaker: JST1.25 2p
+
+![ESP32-2432S024 front](assets/images/esp32-2432S024-front.png)
+
+### ESP32-2432S028 R
+
+- Micro USB
+- I2C: 2 x JST1.25 4p
+- Power + Serial: JST1.25 4p
+- Speaker: JST1.25 2p
+
+![ESP32-2432S028R back](assets/images/esp32-2432S028R-back.png)
+
+### ESP32-3248S035
+
+- Micro USB
+- I2C: 2 x JST1.25 4p
+- Power + Serial: JST1.25 4p
+- Speaker: JST1.25 2p
+
+![ESP32-3248S035 front](assets/images/esp32-3248S035-front.png)
+![ESP32-3248S035 back](assets/images/esp32-3248S035-back.png)
+
+### ESP32-4827S043
+
+- USB-C
+- I2C: JST1.25 4p
+- Power + Serial: JST1.25 4p
+
+![ESP32-4827S043 front](assets/images/esp32-4827S043-front.png)
+![ESP32-4827S043 back](assets/images/esp32-4827S043-back.png)
+
+### ESP32-8048S050
+
+- USB-C
+- I2C: JST1.25 4p
+- Power + Serial: JST1.25 4p
+
+![ESP32-8048S050 front](assets/images/esp32-8048S050-front.png)
+![ESP32-8048S050 back](assets/images/esp32-8048S050-back.png)
+
+### ESP32-8048S070
+
+- USB-C
+- I2C: JST1.25 4p
+- Power + Serial: JST1.25 4p
+
+![ESP32-8048S070 front](assets/images/esp32-8048S070-front.png)
+![ESP32-8048S070 back](assets/images/esp32-8048S070-back.png)
