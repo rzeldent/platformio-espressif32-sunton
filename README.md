@@ -1,4 +1,5 @@
 # Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
+# Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
 
 ## This repo contains definitions for the CPU and board information about the hardware
 
@@ -44,7 +45,7 @@ The table below provides some explanation of the variable names. These definitio
 
 | Define                              | Explanation                                                     |
 |---                                  |---                                                              |
-| ESP32_wwhhS0ddN/R/C                 | The board name, e.g. 2423S012C.                                 |
+| ESP32_wwhhS0ddN/R/C                 | The board name, e.g. 2423S012C                                  |
 |                                     |                                                                 |
 | BOARD_HAS_PSRAM                     | The boards has PSRAM                                            |
 |                                     |                                                                 |
