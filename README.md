@@ -1,5 +1,4 @@
 # Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
-# Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
 
 ## This repo contains definitions for the CPU and board information about the hardware
 
@@ -97,7 +96,7 @@ The table below provides some explanation of the variable names. These definitio
 | LED_G_GPIO                          | GPIO of the green LED                                           |
 | LED_B_GPIO                          | GPIO of the blue LED                                            |
 |                                     |                                                                 |
-| BOARD_HAS_CDS                       | The board has a CdS resistive light resistor                      |
+| BOARD_HAS_CDS                       | The board has a CdS resistive light resistor                    |
 | CDS_GPIO                            | Analogue GPIO input of the CdS sensor                           |
 |                                     |                                                                 |
 | BOARD_HAS_SPEAK_GPIO                | The board has an onboard amplifier for a speaker                |
