@@ -1,4 +1,5 @@
 # Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
+# Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
 
 ## This repo contains definitions for the CPU and board information about the hardware
 
@@ -8,7 +9,7 @@ When this repository is used as a git submodule in the directory ```<project>/bo
 ## Supported boards
 
 | Type              | USB       | CPU                       | Flash | PSRAM | Cores/Speed | Display                                 | Size        | Display interface | Display controller                       | Touch interface    | Touch controller                          | Audio                                     | Flash                                          | LED  | CdS                                       | Relay  | Link                                                                  |
-|---                |           |---                        |---    |---    |--           |---                                      |--           |---                |---                                       |---                 |---                                        |---                                        |---                                             |---   |---                                        |---     |---                                                                    |
+|---                |---        |---                        |---    |---    |--           |---                                      |--           |---                |---                                       |---                 |---                                        |---                                        |---                                             |---   |---                                        |---     |---                                                                    |
 | ESP32_1732S019N   | micro USB | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 170x320                                 | 1.9"        | SPI               | [ST7796](assets/datasheets/ST7796.pdf)   |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005059421229.html)  |
 | ESP32_1732S019C   | micro USB | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 170x320                                 | 1.9"        | SPI               | [ST7796](assets/datasheets/ST7796.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005059421229.html)  |
 | ESP32-2424S012N   | USB-C     | ESP32-C3-MINI-1U-XXN4     | 4Mb   |       | 1 x 160Mhz  | 240x240                                 | 1.2" round  | SPI               | [GC9A01A](assets/datasheets/GC9A01A.pdf) |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005453515690.html)  |
@@ -38,14 +39,13 @@ When this repository is used as a git submodule in the directory ```<project>/bo
 >[!IMPORTANT]
 >The additional flash chip (W25Q32JV) is not always mounted on the board.
 
-
 Besides the normal PlatformIO defines, there are the defines below.
 
 The table below provides some explanation of the variable names. These definitions might still be incomplete.
 
 | Define                              | Explanation                                                     |
 |---                                  |---                                                              |
-| ESP32_wwhhS0ddN/R/C                 | The board name, e.g. 2423S012C.                                 |
+| ESP32_wwhhS0ddN/R/C                 | The board name, e.g. 2423S012C                                  |
 |                                     |                                                                 |
 | BOARD_HAS_PSRAM                     | The boards has PSRAM                                            |
 |                                     |                                                                 |
