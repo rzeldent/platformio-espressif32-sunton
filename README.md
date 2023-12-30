@@ -231,7 +231,6 @@ To produce "real" audio connect the internal 8 bits D2A converter in the ESP32. 
 The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP32_LCD_PIO) has a fix for that by changing the resistor values to prevent distortion.
 [![HexeguitarDIY Audio mod](https://img.youtube.com/vi/6JCLHIXXVus/0.jpg)](https://www.youtube.com/watch?v=6JCLHIXXVus)
 
-
 ## Appendix: Board details
 
 ### ESP32_1732S019 N/C
