@@ -1,5 +1,4 @@
 # Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
-# Sunton CYD (Cheap Yellow Display) PlatformIo Board definitions
 
 ## This repo contains definitions for the CPU and board information about the hardware
 
@@ -39,7 +38,10 @@ When this repository is used as a git submodule in the directory ```<project>/bo
 >[!IMPORTANT]
 >The additional flash chip (W25Q32JV) is not always mounted on the board.
 
-Besides the normal PlatformIO defines, there are the defines below.
+## Board defines
+
+Besides the normal PlatformIO defines, there are the defines below that allow to make software for all these boards using only one source.
+This is used by the [esp32-smartdisplay](https://github.com/rzeldent/esp32-smartdisplay) project to have one abstraction for these boards.
 
 The table below provides some explanation of the variable names. These definitions might still be incomplete.
 
@@ -94,11 +96,11 @@ The table below provides some explanation of the variable names. These definitio
 | LED_G_GPIO                          | GPIO of the green LED                                           |
 | LED_B_GPIO                          | GPIO of the blue LED                                            |
 |                                     |                                                                 |
-| BOARD_HAS_CDS                       | The board has a CdS resistive light resistor                      |
+| BOARD_HAS_CDS                       | The board has a CdS resistive light resistor                    |
 | CDS_GPIO                            | Analogue GPIO input of the CdS sensor                           |
 |                                     |                                                                 |
 | BOARD_HAS_SPEAK_GPIO                | The board has an onboard amplifier for a speaker                |
 | SPEAK_GPIO                          | GPIO of the speaker                                             |
 |                                     |                                                                 |
 | BOARD_HAS_RELAYS                    | The board has replays                                           |
-| RELAY_BASE_GPIO                     | The GPIO of the first relay (next is one higher)                |
+| RELAY_BASE_GPIO                     | The GPIO of the first relay                                     |
