@@ -16,8 +16,8 @@
       "-DLCD_SPI_MOSI=13",
       "-DLCD_SPI_MISO=12",
       "-DLCD_SPI_SCLK=14",
-      "-DLCD_SPI_CS=15",
-      "-DLCD_SPI_DC=2",
+      "-DLCD_CS=15",
+      "-DLCD_DC=2",
       "-DLCD_RST=-1",
 
       "-DLCD_SPI_BUS_CONFIG={.mosi_io_num=13,.miso_io_num=12,.sclk_io_num=14,.quadwp_io_num=-1,.quadhd_io_num=-1}",

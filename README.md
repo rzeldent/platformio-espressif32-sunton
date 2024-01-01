@@ -65,8 +65,8 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_SPI_MOSI                        | SPI                                                             |
 | LCD_SPI_MISO                        | SPI                                                             |
 | LCD_SPI_SCLK                        | SPI                                                             |
-| LCD_SPI_CS                          | SPI                                                             |
-| LCD_SPI_DC                          | SPI                                                             |
+| LCD_CS                              |                                                                 |
+| LCD_DC                              |                                                                 |
 | LCD_RST                             |                                                                 |
 |                                     |                                                                 |
 | LCD_HSYNC_PULSE_WIDTH               | Direct IO                                                       |
