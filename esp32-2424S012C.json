@@ -19,6 +19,7 @@
       "-DGC9A01_SPI_SCLK=6",
       "-DGC9A01_CS=10",
       "-DGC9A01_DC=2",
+      "-DGC9A01_VENDOR_CONFIG=NULL",
       "-DLCD_SWAP_XY=false",
       "-DLCD_MIRROR_X=true",
       "-DLCD_MIRROR_Y=false",
