@@ -62,11 +62,40 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
 | LCD_BCKL_GPIO                       | GPIO of the backlight                                           |
 | LCD_SPI_HOST                        | The SPI host to use for the LCD driver                          |
-| LCD_SPI_BUS_CONFIG                  | The LCD SPI BUS configuration                                   |
-| LCD_IO_SPI_CONFIG                   | The LCD IO SPI configuration                                    |
-| LCD_PANEL_DEV_CONFIG                | The LCD panel device configuration                              |
-| LCD_RGB_PANEL_CONFIG                | The LCD panel settings for LV_COLOR_16_SWAP = 0                 |
-| LCD_RGB_PANEL_CONFIG_COLOR_16_SWAP  | The LCD panel settings for LV_COLOR_16_SWAP = 1                 |
+| LCD_SPI_MOSI                        | SPI                                                             |
+| LCD_SPI_MISO                        | SPI                                                             |
+| LCD_SPI_SCLK                        | SPI                                                             |
+| LCD_SPI_CS                          | SPI                                                             |
+| LCD_SPI_DC                          | SPI                                                             |
+| LCD_RST                             |                                                                 |
+|                                     |                                                                 |
+| LCD_HSYNC_PULSE_WIDTH               | Direct IO                                                       |
+| LCD_HSYNC_BACK_PORCH                | Direct IO                                                       |
+| LCD_HSYNC_FRONT_PORCH               | Direct IO                                                       |
+| LCD_VSYNC_PULSE_WIDTH               | Direct IO                                                       |
+| LCD_VSYNC_BACK_PORCH                | Direct IO                                                       |
+| LCD_VSYNC_FRONT_PORCH               | Direct IO                                                       |
+| LCD_HSYNC                           | Direct IO                                                       |
+| LCD_VSYNC                           | Direct IO                                                       |
+| LCD_DE                              | Direct IO                                                       |
+| LCD_PCLK                            | Direct IO                                                       |
+| LCD_R0                              | Direct IO                                                       |
+| LCD_R1                              | Direct IO                                                       |
+| LCD_R2                              | Direct IO                                                       |
+| LCD_R3                              | Direct IO                                                       |
+| LCD_R4                              | Direct IO                                                       |
+| LCD_G0                              | Direct IO                                                       |
+| LCD_G1                              | Direct IO                                                       |
+| LCD_G2                              | Direct IO                                                       |
+| LCD_G3                              | Direct IO                                                       |
+| LCD_G4                              | Direct IO                                                       |
+| LCD_G5                              | Direct IO                                                       |
+| LCD_B0                              | Direct IO                                                       |
+| LCD_B1                              | Direct IO                                                       |
+| LCD_B2                              | Direct IO                                                       |
+| LCD_B3                              | Direct IO                                                       |
+| LCD_B4                              | Direct IO                                                       |
+|                                     |                                                                 |
 | LCD_SWAP_XY                         | Swap the X and Y axes for the panel                             |
 | LCD_MIRROR_X                        | Mirror the panel horizontally                                   |
 | LCD_MIRROR_Y                        | Mirror the panel vertically                                     |
@@ -79,31 +108,45 @@ The table below provides some explanation of the variable names. These definitio
 | TOUCH_USES_XPT2046                  | Touch uses the XPT2046 resistive  touch controller              |
 |                                     |                                                                 |
 | TOUCH_I2C_HOST                      | The I2C host to use for the touch controller                    |
-| TOUCH_I2C_CONFIG                    | The touch I2C configuration                                     |
-| TOUCH_IO_I2C_CONFIG                 | The touch IO I2C configuration                                  |
-| TOUCH_DEV_CONFIG                    | The touch device configuration                                  |
+| TOUCH_I2C_SDA                       | I2C                                                             |
+| TOUCH_I2C_SCL                       | I2C                                                             |
+| TOUCH_RST                           | I2C                                                             |
+| TOUCH_INT                           | I2C                                                             |
+| TOUCH_SPI_HOST                      | SPI                                                             |
+| TOUCH_SPI_MOSI                      | SPI                                                             |
+| TOUCH_SPI_MISO                      | SPI                                                             |
+| TOUCH_SPI_SCLK                      | SPI                                                             |
+| TOUCH_SPI_CS                        | SPI                                                             |
+| TOUCH_SPI_DC                        | SPI                                                             |
+| TOUCH_RST                           | SPI                                                             |
+| TOUCH_INT                           | SPI                                                             |
 | TOUCH_SWAP_X                        | Swap the touch horizontally                                     |
 | TOUCH_SWAP_Y                        | Swap the touch vertically                                       |
 |                                     |                                                                 |
 | BOARD_HAS_TF                        | The board has a TF slot                                         |
-| TF_CS_GPIO                          | GPIO of the CS of the TF slot                                   |
-| TF_MOSI_GPIO                        | GPIO of the MOSI of the TF slot                                 |
-| TF_SCLK_GPIO                        | GPIO of the SCLK of the TF slot                                 |
-| TF_MISO_GPIO                        | GPIO of the MISO of the TF slot                                 |
+| TF_CS                               | GPIO of the CS of the TF slot                                   |
+| TF_SPI_MOSI                         | GPIO of the MOSI of the TF slot                                 |
+| TF_SPI_SCLK                         | GPIO of the SCLK of the TF slot                                 |
+| TF_SPI_MISO                         | GPIO of the MISO of the TF slot                                 |
 |                                     |                                                                 |
 | BOARD_HAS_RGB_LED                   | The board has an RGB led                                        |
-| LED_R_GPIO                          | GPIO of the red LED                                             |
-| LED_G_GPIO                          | GPIO of the green LED                                           |
-| LED_B_GPIO                          | GPIO of the blue LED                                            |
+| RGB_LED_R                           | GPIO of the red LED                                             |
+| RGB_LED_G                           | GPIO of the green LED                                           |
+| RGB_LED_B                           | GPIO of the blue LED                                            |
 |                                     |                                                                 |
 | BOARD_HAS_CDS                       | The board has a CdS resistive light resistor                    |
-| CDS_GPIO                            | Analogue GPIO input of the CdS sensor                           |
+| CDS                                 | Analogue GPIO input of the CdS sensor                           |
 |                                     |                                                                 |
-| BOARD_HAS_SPEAK_GPIO                | The board has an onboard amplifier for a speaker                |
-| SPEAK_GPIO                          | GPIO of the speaker                                             |
+| BOARD_HAS_SPEAK                     | The board has an onboard amplifier for a speaker                |
+| SPEAK                               | GPIO of the speaker                                             |
 |                                     |                                                                 |
 | BOARD_HAS_RELAYS                    | The board has replays                                           |
-| RELAY_BASE_GPIO                     | The GPIO of the first relay                                     |
+| RELAY_BASE                          | The GPIO of the first relay                                     |
+
+
+
+
+
 
 ## PSRAM
 
@@ -124,16 +167,16 @@ The standard definition of the ```esp32-s3-devkitc-1.json``` does not have any c
 If the board has an RGB led, the define ```BOARD_HAS_RGB_LED``` is defined.
 Additionally, the following defines are present for the definition of the GPIO pins:
 
-- LED_R_GPIO
-- LED_G_GPIO
-- LED_B_GPIO
+- RGB_LED_R
+- RGB_LED_G
+- RGB_LED_B
 
 Before using the RGB LEDs, the GPIOs must be defined as output. This is already done in the [smartdisplay_init()](#void-smartdisplay_init) function.
 
 ```c++
-  pinmode(LED_R_GPIO, OUTPUT);
-  pinmode(LED_G_GPIO, OUTPUT);
-  pinmode(LED_B_GPIO, OUTPUT);
+  pinmode(RGB_LED_R, OUTPUT);
+  pinmode(RGB_LED_G, OUTPUT);
+  pinmode(RGB_LED_B, OUTPUT);
 ```
 
 The LEDs are connected between the GPIO pin and the 3.3V. So the LED will light up if the GPIO is set to LOW (inverted).
@@ -141,9 +184,9 @@ The LEDs are connected between the GPIO pin and the 3.3V. So the LED will light 
 For example: set the RGB led to red is done by the following code:
 
 ```c++
-  digitalWrite(LED_R_GPIO, false);
-  digitalWrite(LED_G_GPIO, true);
-  digitalWrite(LED_B_GPIO, true);
+  digitalWrite(RGB_LED_R, false);
+  digitalWrite(RGB_LED_G, true);
+  digitalWrite(RGB_LED_B, true);
 ```
 
 To have more colors than the 8 RGB combinations, PWM can be used to mix the colors.
@@ -164,15 +207,15 @@ ESP_ARDUINO_VERSION_MAJOR < 3:
 
 ```c++
   ledcSetup(0, 5000, 8);
-  ledcAttachPin(LED_R_GPIO, 0);
+  ledcAttachPin(RGB_LED_R, 0);
   ledcWrite(0, 192);
 ```
 
 ESP_ARDUINO_VERSION_MAJOR >= 3
 
 ```c++
-  ledcAttach(LED_R_GPIO, 0, 8);
-  ledcWrite(LED_R_GPIO, 192);
+  ledcAttach(RGB_LED_R, 0, 8);
+  ledcWrite(RGB_LED_R, 192);
 ```
 
 ## Reading the CdS (light sensor)
@@ -182,18 +225,18 @@ ESP_ARDUINO_VERSION_MAJOR >= 3
 
 If the board has a CdS photo resistor (Cadmium Sulfide, CdS), the define ```BOARD_HAS_CDS``` is defined. It is attached to the analogue input of the ESP32 with two resistors between the GND and the VCC. When the CDS is covered, it's resistance is in the order of mega&Omega; but in bright light can drop to a few 1k&Omega;.
 
-To use the sensor, the define ```CDS_GPIO``` indicates the analogue port to read.
+To use the sensor, the define ```CDS``` indicates the analogue port to read.
 Setting the port to input and the attenuation is already done in the [smartdisplay_init()](#void-smartdisplay_init) function.
 
 ```c++
   analogSetAttenuation(ADC_0db); // 0dB(1.0x) 0~800mV
-  pinMode(CDS_GPIO, INPUT);
+  pinMode(CDS, INPUT);
 ```
 
 Next, read the value using:
 
 ```c++
-  auto value = analogReadMilliVolts(CDS_GPIO);
+  auto value = analogReadMilliVolts(CDS);
 ```
 
 See the [GT36516](assets/datasheets/GT36516.pdf) specs:
@@ -213,14 +256,14 @@ An 8&Omega; speaker can be connected to the output marked SPEAK. This is a 1.25 
 Setting the speaker GPIO to output is already done in the [smartdisplay_init()](#void-smartdisplay_init) function.
 
 ```c++
-pinmode(SPEAK_GPIO, OUTPUT)
+pinmode(SPEAK, OUTPUT)
 ```
 
-Beeps can be generated by generating a PWM signal on the SPEAK_GPIO or using the tone function:
+Beeps can be generated by generating a PWM signal on the SPEAK or using the tone function:
 
 ```c++
 // Uses PWM Channel 0
-tone(SPEAK_GPIO, frequency, duration);
+tone(SPEAK, frequency, duration);
 ```
 
 To produce "real" audio connect the internal 8 bits D2A converter in the ESP32. Because the speaker is connected to GPIO26, this is the DAC2 (Left Channel).
