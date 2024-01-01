@@ -63,39 +63,39 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
 | BCKL                                | GPIO of the backlight                                           |
 | type_SPI_HOST                       | The SPI host to use for the LCD driver, eg. ST7789_SPI_HOST     |
-| type_SPI_MOSI                       | SPI                                                             |
-| type_SPI_MISO                       | SPI                                                             |
-| type_SPI_SCLK                       | SPI                                                             |
-| type_CS                             |                                                                 |
-| type_DC                             |                                                                 |
-| type_RST                            |                                                                 |
+| type_SPI_MOSI                       | SPI MOSI                                                        |
+| type_SPI_MISO                       | SPI MISO                                                        |
+| type_SPI_SCLK                       | SPI SCLK                                                        |
+| type_CS                             | GPIO for the Chip Select                                        |
+| type_DC                             | GPIO for the Data or Command                                    |
+| type_RST                            | GPIO for the ReSeT                                              |
 |                                     |                                                                 |
-| RGB_PANEL_HSYNC_PULSE_WIDTH         | Direct IO                                                       |
-| RGB_PANEL_HSYNC_BACK_PORCH          | Direct IO                                                       |
-| RGB_PANEL_HSYNC_FRONT_PORCH         | Direct IO                                                       |
-| RGB_PANEL_VSYNC_PULSE_WIDTH         | Direct IO                                                       |
-| RGB_PANEL_VSYNC_BACK_PORCH          | Direct IO                                                       |
-| RGB_PANEL_VSYNC_FRONT_PORCH         | Direct IO                                                       |
-| RGB_PANEL_HSYNC                     | Direct IO                                                       |
-| RGB_PANEL_VSYNC                     | Direct IO                                                       |
-| RGB_PANEL_DE                        | Direct IO                                                       |
-| RGB_PANEL_PCLK                      | Direct IO                                                       |
-| RGB_PANEL_R0                        | Direct IO                                                       |
-| RGB_PANEL_R1                        | Direct IO                                                       |
-| RGB_PANEL_R2                        | Direct IO                                                       |
-| RGB_PANEL_R3                        | Direct IO                                                       |
-| RGB_PANEL_R4                        | Direct IO                                                       |
-| RGB_PANEL_G0                        | Direct IO                                                       |
-| RGB_PANEL_G1                        | Direct IO                                                       |
-| RGB_PANEL_G2                        | Direct IO                                                       |
-| RGB_PANEL_G3                        | Direct IO                                                       |
-| RGB_PANEL_G4                        | Direct IO                                                       |
-| RGB_PANEL_G5                        | Direct IO                                                       |
-| RGB_PANEL_B0                        | Direct IO                                                       |
-| RGB_PANEL_B1                        | Direct IO                                                       |
-| RGB_PANEL_B2                        | Direct IO                                                       |
-| RGB_PANEL_B3                        | Direct IO                                                       |
-| RGB_PANEL_B4                        | Direct IO                                                       |
+| RGB_PANEL_HSYNC_PULSE_WIDTH         | Horizontal pulse width                                          |
+| RGB_PANEL_HSYNC_BACK_PORCH          | Horizontal back porch                                           |
+| RGB_PANEL_HSYNC_FRONT_PORCH         | Horizontal front porch                                          |
+| RGB_PANEL_VSYNC_PULSE_WIDTH         | Vertical pulse width                                            |
+| RGB_PANEL_VSYNC_BACK_PORCH          | Vertical back porch                                             |
+| RGB_PANEL_VSYNC_FRONT_PORCH         | Vertical front porch                                            |
+| RGB_PANEL_HSYNC                     | GPIO of the horizontal synch                                    |
+| RGB_PANEL_VSYNC                     | GPIO of the vertical synch                                      |
+| RGB_PANEL_DE                        | GPIO for the Data Enable                                        |
+| RGB_PANEL_PCLK                      | GPIO for the Pixel CLocK                                        |
+| RGB_PANEL_R0                        | GPIO for the red bit 0                                          |
+| RGB_PANEL_R1                        | GPIO for the red bit 1                                          |
+| RGB_PANEL_R2                        | GPIO for the red bit 2                                          |
+| RGB_PANEL_R3                        | GPIO for the red bit 3                                          |
+| RGB_PANEL_R4                        | GPIO for the red bit 4                                          |
+| RGB_PANEL_G0                        | GPIO for the green bit 0                                        |
+| RGB_PANEL_G1                        | GPIO for the green bit 1                                        |
+| RGB_PANEL_G2                        | GPIO for the green bit 2                                        |
+| RGB_PANEL_G3                        | GPIO for the green bit 3                                        |
+| RGB_PANEL_G4                        | GPIO for the green bit 4                                        |
+| RGB_PANEL_G5                        | GPIO for the green bit 5                                        |
+| RGB_PANEL_B0                        | GPIO for the blue bit 0                                         |
+| RGB_PANEL_B1                        | GPIO for the blue bit 1                                         |
+| RGB_PANEL_B2                        | GPIO for the blue bit 2                                         |
+| RGB_PANEL_B3                        | GPIO for the blue bit 3                                         |
+| RGB_PANEL_B4                        | GPIO for the blue bit 4                                         |
 |                                     |                                                                 |
 | LCD_SWAP_XY                         | Swap the X and Y axes for the panel                             |
 | LCD_MIRROR_X                        | Mirror the panel horizontally                                   |
@@ -108,48 +108,43 @@ The table below provides some explanation of the variable names. These definitio
 | TOUCH_USES_CST816S                  | Touch uses the CST816S capacitive touch controller              |
 | TOUCH_USES_XPT2046                  | Touch uses the XPT2046 resistive  touch controller              |
 |                                     |                                                                 |
-| type_I2C_HOST                       | The I2C host to use for the touch controller                    |
-| type_I2C_SDA                        | I2C                                                             |
-| type_I2C_SCL                        | I2C                                                             |
-| type_RST                            | I2C                                                             |
-| type_INT                            | I2C                                                             |
+| type_I2C_HOST                       | The I2C host to use for the touch controller eg. GT911_i2C_HOST |
+| type_I2C_SDA                        | I2C Data                                                        |
+| type_I2C_SCL                        | I2C Clock                                                       |
+| type_RST                            | GPIO for the ReSeT                                              |
+| type_INT                            | GPIO for the INTerrupt                                          |
 |                                     |                                                                 |
-| type_SPI_HOST                       | SPI                                                             |
-| type_SPI_MOSI                       | SPI                                                             |
-| type_SPI_MISO                       | SPI                                                             |
-| type_SPI_SCLK                       | SPI                                                             |
-| type_CS                             |                                                                 |
-| type_DC                             |                                                                 |
-| type_RST                            |                                                                 |
-| type_INT                            |                                                                 |
+| type_SPI_HOST                       | The SPI host to use for the touch driver, eg. XPT2046_SPI_HOST  |
+| type_SPI_MOSI                       | SPI MOSI                                                        |
+| type_SPI_MISO                       | SPI MISO                                                        |
+| type_SPI_SCLK                       | SPI SCLK                                                        |
+| type_DC                             | GPIO for the Data or Command                                    |
+| type_RST                            | GPIO for the ReSeT                                              |
+| type_RST                            | GPIO for the ReSeT                                              |
+| type_INT                            | GPIO for the INTerrupt                                          |
 |                                     |                                                                 |
 | TOUCH_SWAP_X                        | Swap the touch horizontally                                     |
 | TOUCH_SWAP_Y                        | Swap the touch vertically                                       |
 |                                     |                                                                 |
 | BOARD_HAS_TF                        | The board has a TF slot                                         |
-| TF_CS                               | GPIO of the CS of the TF slot                                   |
-| TF_SPI_MOSI                         | GPIO of the MOSI of the TF slot                                 |
-| TF_SPI_SCLK                         | GPIO of the SCLK of the TF slot                                 |
-| TF_SPI_MISO                         | GPIO of the MISO of the TF slot                                 |
+| type_SPI_MOSI                       | SPI MOSI                                                        |
+| type_SPI_MISO                       | SPI MISO                                                        |
+| type_SPI_SCLK                       | SPI SCLK                                                        |
+| TF_CS                               | GPIO for the Chip Select                                        |
 |                                     |                                                                 |
 | BOARD_HAS_RGB_LED                   | The board has an RGB led                                        |
-| RGB_LED_R                           | GPIO of the red LED                                             |
-| RGB_LED_G                           | GPIO of the green LED                                           |
-| RGB_LED_B                           | GPIO of the blue LED                                            |
+| RGB_LED_R                           | GPIO for the red LED                                            |
+| RGB_LED_G                           | GPIO for the green LED                                          |
+| RGB_LED_B                           | GPIO for the blue LED                                           |
 |                                     |                                                                 |
 | BOARD_HAS_CDS                       | The board has a CdS resistive light resistor                    |
-| CDS                                 | Analogue GPIO input of the CdS sensor                           |
+| CDS                                 | Analogue GPIO input of the CDS sensor                           |
 |                                     |                                                                 |
 | BOARD_HAS_SPEAK                     | The board has an onboard amplifier for a speaker                |
-| SPEAK                               | GPIO of the speaker                                             |
+| SPEAK                               | GPIO of the SPEAKer                                             |
 |                                     |                                                                 |
-| BOARD_HAS_RELAYS                    | The board has replays                                           |
-| RELAY_BASE                          | The GPIO of the first relay                                     |
-
-
-
-
-
+| BOARD_HAS_RELAYS                    | The board has (a) relay(s)                                      |
+| RELAY_BASE                          | GPIO of the first relay                                         |
 
 ## PSRAM
 
@@ -174,7 +169,7 @@ Additionally, the following defines are present for the definition of the GPIO p
 - RGB_LED_G
 - RGB_LED_B
 
-Before using the RGB LEDs, the GPIOs must be defined as output. This is already done in the [smartdisplay_init()](#void-smartdisplay_init) function.
+Before using the RGB LEDs, the GPIOs must be defined as output.
 
 ```c++
   pinmode(RGB_LED_R, OUTPUT);
@@ -182,7 +177,7 @@ Before using the RGB LEDs, the GPIOs must be defined as output. This is already 
   pinmode(RGB_LED_B, OUTPUT);
 ```
 
-The LEDs are connected between the GPIO pin and the 3.3V. So the LED will light up if the GPIO is set to LOW (inverted).
+The LEDs are connected between the GPIO pin and the 3.3V. So the LED will light up if the GPIO is set to LOW (inverted). 
 
 For example: set the RGB led to red is done by the following code:
 
@@ -226,10 +221,12 @@ ESP_ARDUINO_VERSION_MAJOR >= 3
 >[!NOTE]
 >Not all boards have a light sensor. Refer to the [supported boards](#supported-boards) to see if this is available.
 
-If the board has a CdS photo resistor (Cadmium Sulfide, CdS), the define ```BOARD_HAS_CDS``` is defined. It is attached to the analogue input of the ESP32 with two resistors between the GND and the VCC. When the CDS is covered, it's resistance is in the order of mega&Omega; but in bright light can drop to a few 1k&Omega;.
+If the board has a CdS photo resistor (Cadmium Sulfide, CdS), the define ```BOARD_HAS_CDS``` is defined.
+The resistor is attached to the analogue input of the ESP32 with two resistors between the GND and the VCC. When the CDS is covered, it's resistance is in the order of mega&Omega; but in bright light can drop to a few 1k&Omega;.
 
-To use the sensor, the define ```CDS``` indicates the analogue port to read.
-Setting the port to input and the attenuation is already done in the [smartdisplay_init()](#void-smartdisplay_init) function.
+To use the sensor, the define ```CDS``` indicates the analogue port.
+
+Before reading the analogue voltage the GPIO must be defined as input.
 
 ```c++
   analogSetAttenuation(ADC_0db); // 0dB(1.0x) 0~800mV
@@ -256,7 +253,8 @@ The ESP32 has a threshold of ~15mV so below 15mV the value is 0.
 >Not all boards have a LED. Refer to the Refer to the [supported boards](#supported-boards) to see if this is available.
 
 An 8&Omega; speaker can be connected to the output marked SPEAK. This is a 1.25 JST connector.
-Setting the speaker GPIO to output is already done in the [smartdisplay_init()](#void-smartdisplay_init) function.
+
+Before writing to the speaker, the GPIO must be defined as output.
 
 ```c++
 pinmode(SPEAK, OUTPUT)
@@ -269,7 +267,7 @@ Beeps can be generated by generating a PWM signal on the SPEAK or using the tone
 tone(SPEAK, frequency, duration);
 ```
 
-To produce "real" audio connect the internal 8 bits D2A converter in the ESP32. Because the speaker is connected to GPIO26, this is the DAC2 (Left Channel).
+To produce "real" audio connect the internal 8 bits D2A converter in the ESP32. The speaker is connected to GPIO26 so can be connected to the DAC2 (Left Channel) of the I2S.
 
 >[!TIP]
 >Make sure the I2S connection is only to the LEFT channel. GPIO25, the right channel, is connected on some boards to the GT911 touch controller and creates strange results.
@@ -295,7 +293,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-2432S024 N/R/C
 
 - Micro USB
-- I2C: 2 x JST1.25 4p
+- I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
 
@@ -304,7 +302,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-2432S028 R
 
 - Micro USB
-- I2C: 2 x JST1.25 4p
+- I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
 
@@ -313,7 +311,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-3248S035
 
 - Micro USB
-- I2C: 2 x JST1.25 4p
+- I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
 
@@ -323,7 +321,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-4827S043
 
 - USB-C
-- I2C: JST1.25 4p
+- I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
 ![ESP32-4827S043 front](assets/images/esp32-4827S043-front.png)
@@ -332,7 +330,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-8048S050
 
 - USB-C
-- I2C: JST1.25 4p
+- I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
 ![ESP32-8048S050 front](assets/images/esp32-8048S050-front.png)
@@ -341,7 +339,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-8048S070
 
 - USB-C
-- I2C: JST1.25 4p
+- I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
 ![ESP32-8048S070 front](assets/images/esp32-8048S070-front.png)
