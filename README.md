@@ -60,41 +60,41 @@ The table below provides some explanation of the variable names. These definitio
 |                                     |                                                                 |
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
-| LCD_BCKL_GPIO                       | GPIO of the backlight                                           |
-| LCD_type_SPI_HOST                   | The SPI host to use for the LCD driver                          |
-| LCD_type_SPI_MOSI                   | SPI                                                             |
-| LCD_type_SPI_MISO                   | SPI                                                             |
-| LCD_type_SPI_SCLK                   | SPI                                                             |
-| LCD_type_CS                         |                                                                 |
-| LCD_type_DC                         |                                                                 |
-| LCD_type_RST                        |                                                                 |
+| BCKL                                | GPIO of the backlight                                           |
+| type_SPI_HOST                       | The SPI host to use for the LCD driver                          |
+| type_SPI_MOSI                       | SPI                                                             |
+| type_SPI_MISO                       | SPI                                                             |
+| type_SPI_SCLK                       | SPI                                                             |
+| type_CS                             |                                                                 |
+| type_DC                             |                                                                 |
+| type_RST                            |                                                                 |
 |                                     |                                                                 |
-| LCD_HSYNC_PULSE_WIDTH               | Direct IO                                                       |
-| LCD_HSYNC_BACK_PORCH                | Direct IO                                                       |
-| LCD_HSYNC_FRONT_PORCH               | Direct IO                                                       |
-| LCD_VSYNC_PULSE_WIDTH               | Direct IO                                                       |
-| LCD_VSYNC_BACK_PORCH                | Direct IO                                                       |
-| LCD_VSYNC_FRONT_PORCH               | Direct IO                                                       |
-| LCD_HSYNC                           | Direct IO                                                       |
-| LCD_VSYNC                           | Direct IO                                                       |
-| LCD_DE                              | Direct IO                                                       |
-| LCD_PCLK                            | Direct IO                                                       |
-| LCD_R0                              | Direct IO                                                       |
-| LCD_R1                              | Direct IO                                                       |
-| LCD_R2                              | Direct IO                                                       |
-| LCD_R3                              | Direct IO                                                       |
-| LCD_R4                              | Direct IO                                                       |
-| LCD_G0                              | Direct IO                                                       |
-| LCD_G1                              | Direct IO                                                       |
-| LCD_G2                              | Direct IO                                                       |
-| LCD_G3                              | Direct IO                                                       |
-| LCD_G4                              | Direct IO                                                       |
-| LCD_G5                              | Direct IO                                                       |
-| LCD_B0                              | Direct IO                                                       |
-| LCD_B1                              | Direct IO                                                       |
-| LCD_B2                              | Direct IO                                                       |
-| LCD_B3                              | Direct IO                                                       |
-| LCD_B4                              | Direct IO                                                       |
+| IO_HSYNC_PULSE_WIDTH                | Direct IO                                                       |
+| IO_HSYNC_BACK_PORCH                 | Direct IO                                                       |
+| IO_HSYNC_FRONT_PORCH                | Direct IO                                                       |
+| IO_VSYNC_PULSE_WIDTH                | Direct IO                                                       |
+| IO_VSYNC_BACK_PORCH                 | Direct IO                                                       |
+| IO_VSYNC_FRONT_PORCH                | Direct IO                                                       |
+| IO_HSYNC                            | Direct IO                                                       |
+| IO_VSYNC                            | Direct IO                                                       |
+| IO_DE                               | Direct IO                                                       |
+| IO_PCLK                             | Direct IO                                                       |
+| IO_R0                               | Direct IO                                                       |
+| IO_R1                               | Direct IO                                                       |
+| IO_R2                               | Direct IO                                                       |
+| IO_R3                               | Direct IO                                                       |
+| IO_R4                               | Direct IO                                                       |
+| IO_G0                               | Direct IO                                                       |
+| IO_G1                               | Direct IO                                                       |
+| IO_G2                               | Direct IO                                                       |
+| IO_G3                               | Direct IO                                                       |
+| IO_G4                               | Direct IO                                                       |
+| IO_G5                               | Direct IO                                                       |
+| IO_B0                               | Direct IO                                                       |
+| IO_B1                               | Direct IO                                                       |
+| IO_B2                               | Direct IO                                                       |
+| IO_B3                               | Direct IO                                                       |
+| IO_B4                               | Direct IO                                                       |
 |                                     |                                                                 |
 | LCD_SWAP_XY                         | Swap the X and Y axes for the panel                             |
 | LCD_MIRROR_X                        | Mirror the panel horizontally                                   |
@@ -107,21 +107,23 @@ The table below provides some explanation of the variable names. These definitio
 | TOUCH_USES_CST816S                  | Touch uses the CST816S capacitive touch controller              |
 | TOUCH_USES_XPT2046                  | Touch uses the XPT2046 resistive  touch controller              |
 |                                     |                                                                 |
-| TOUCH_type_I2C_HOST                 | The I2C host to use for the touch controller                    |
-| TOUCH_type_I2C_SDA                  | I2C                                                             |
-| TOUCH_type_I2C_SCL                  | I2C                                                             |
-| TOUCH_type_RST                      | I2C                                                             |
-| TOUCH_type_INT                      | I2C                                                             |
-| TOUCH_type_SPI_HOST                 | SPI                                                             |
-| TOUCH_type_SPI_MOSI                 | SPI                                                             |
-| TOUCH_type_SPI_MISO                 | SPI                                                             |
-| TOUCH_type_SPI_SCLK                 | SPI                                                             |
-| TOUCH_type_CS                       |                                                                 |
-| TOUCH_type_DC                       |                                                                 |
-| TOUCH_type_RST                      |                                                                 |
-| TOUCH_type_INT                      |                                                                 |
-| TOUCH_type_SWAP_X                   | Swap the touch horizontally                                     |
-| TOUCH_type_SWAP_Y                   | Swap the touch vertically                                       |
+| type_I2C_HOST                       | The I2C host to use for the touch controller                    |
+| type_I2C_SDA                        | I2C                                                             |
+| type_I2C_SCL                        | I2C                                                             |
+| type_RST                            | I2C                                                             |
+| type_INT                            | I2C                                                             |
+|                                     |                                                                 |
+| type_SPI_HOST                       | SPI                                                             |
+| type_SPI_MOSI                       | SPI                                                             |
+| type_SPI_MISO                       | SPI                                                             |
+| type_SPI_SCLK                       | SPI                                                             |
+| type_CS                             |                                                                 |
+| type_DC                             |                                                                 |
+| type_RST                            |                                                                 |
+| type_INT                            |                                                                 |
+|                                     |                                                                 |
+| TOUCH_SWAP_X                        | Swap the touch horizontally                                     |
+| TOUCH_SWAP_Y                        | Swap the touch vertically                                       |
 |                                     |                                                                 |
 | BOARD_HAS_TF                        | The board has a TF slot                                         |
 | TF_CS                               | GPIO of the CS of the TF slot                                   |
