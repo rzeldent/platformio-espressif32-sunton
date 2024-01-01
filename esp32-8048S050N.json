@@ -18,7 +18,6 @@
       "-DLCD_HEIGHT=480",
       "-DLCD_BCKL_GPIO=2",
       "-DLCD_USES_DIRECT_IO",
-
       "-DLCD_HSYNC_PULSE_WIDTH=4",
       "-DLCD_HSYNC_BACK_PORCH=43",
       "-DLCD_HSYNC_FRONT_PORCH=8",
@@ -45,11 +44,7 @@
       "-DLCD_B2=47",
       "-DLCD_B3=21",
       "-DLCD_B4=14",
-
-      "-DLCD_RGB_PANEL_CONFIG={.clk_src=LCD_CLK_SRC_PLL160M,.timings={.pclk_hz=16000000,.h_res=LCD_WIDTH,.v_res=LCD_HEIGHT,.hsync_pulse_width=4,.hsync_back_porch=43,.hsync_front_porch=8,.vsync_pulse_width=4,.vsync_back_porch=12,.vsync_front_porch=8,.flags={.hsync_idle_low=1,.vsync_idle_low=1,.pclk_active_neg=1}},.data_width=16,.psram_trans_align=64,.hsync_gpio_num=39,.vsync_gpio_num=41,.de_gpio_num=40,.pclk_gpio_num=42,.disp_gpio_num=-1,.data_gpio_nums={8,3,46,9,1,5,6,7,15,16,4,45,48,47,21,14},.flags={.fb_in_psram=1}}",
-      "-DLCD_RGB_PANEL_CONFIG_COLOR_16_SWAP={.clk_src=LCD_CLK_SRC_PLL160M,.timings={.pclk_hz=16000000,.h_res=LCD_WIDTH,.v_res=LCD_HEIGHT,.hsync_pulse_width=4,.hsync_back_porch=43,.hsync_front_porch=8,.vsync_pulse_width=4,.vsync_back_porch=12,.vsync_front_porch=8,.flags={.hsync_idle_low=1,.vsync_idle_low=1,.pclk_active_neg=1}},.data_width=16,.psram_trans_align=64,.hsync_gpio_num=39,.vsync_gpio_num=41,.de_gpio_num=40,.pclk_gpio_num=42,.disp_gpio_num=-1,.data_gpio_nums={15,16,4,45,48,47,21,14,8,3,46,9,1,5,6,7},.flags={.fb_in_psram=1}}",
-      
-      "-DBUTTON_BOOT_GPIO=0",
+      "-DBUTTON_BOOT=0",
       "-DBOARD_HAS_TF",
       "-DTF_CS=5",
       "-DTF_SPI_MOSI=23",

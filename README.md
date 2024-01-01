@@ -51,7 +51,7 @@ The table below provides some explanation of the variable names. These definitio
 |                                     |                                                                 |
 | BOARD_HAS_PSRAM                     | The boards has PSRAM                                            |
 |                                     |                                                                 |
-| BUTTON_BOOT_GPIO                    | GPIO of the BOOT pushbutton                                     |
+| BUTTON_BOOT                    | GPIO of the BOOT pushbutton                                     |
 |                                     |                                                                 |
 | LCD_USES_ST7789                     | LCD uses the ST7789 display driver                              |
 | LCD_USES_GC9A01                     | LCD uses the GC9A01 display driver                              |
@@ -61,13 +61,13 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
 | LCD_BCKL_GPIO                       | GPIO of the backlight                                           |
-| LCD_SPI_HOST                        | The SPI host to use for the LCD driver                          |
-| LCD_SPI_MOSI                        | SPI                                                             |
-| LCD_SPI_MISO                        | SPI                                                             |
-| LCD_SPI_SCLK                        | SPI                                                             |
-| LCD_CS                              |                                                                 |
-| LCD_DC                              |                                                                 |
-| LCD_RST                             |                                                                 |
+| LCD_type_SPI_HOST                   | The SPI host to use for the LCD driver                          |
+| LCD_type_SPI_MOSI                   | SPI                                                             |
+| LCD_type_SPI_MISO                   | SPI                                                             |
+| LCD_type_SPI_SCLK                   | SPI                                                             |
+| LCD_type_CS                         |                                                                 |
+| LCD_type_DC                         |                                                                 |
+| LCD_type_RST                        |                                                                 |
 |                                     |                                                                 |
 | LCD_HSYNC_PULSE_WIDTH               | Direct IO                                                       |
 | LCD_HSYNC_BACK_PORCH                | Direct IO                                                       |
@@ -107,21 +107,21 @@ The table below provides some explanation of the variable names. These definitio
 | TOUCH_USES_CST816S                  | Touch uses the CST816S capacitive touch controller              |
 | TOUCH_USES_XPT2046                  | Touch uses the XPT2046 resistive  touch controller              |
 |                                     |                                                                 |
-| TOUCH_I2C_HOST                      | The I2C host to use for the touch controller                    |
-| TOUCH_I2C_SDA                       | I2C                                                             |
-| TOUCH_I2C_SCL                       | I2C                                                             |
-| TOUCH_RST                           | I2C                                                             |
-| TOUCH_INT                           | I2C                                                             |
-| TOUCH_SPI_HOST                      | SPI                                                             |
-| TOUCH_SPI_MOSI                      | SPI                                                             |
-| TOUCH_SPI_MISO                      | SPI                                                             |
-| TOUCH_SPI_SCLK                      | SPI                                                             |
-| TOUCH_SPI_CS                        | SPI                                                             |
-| TOUCH_SPI_DC                        | SPI                                                             |
-| TOUCH_RST                           | SPI                                                             |
-| TOUCH_INT                           | SPI                                                             |
-| TOUCH_SWAP_X                        | Swap the touch horizontally                                     |
-| TOUCH_SWAP_Y                        | Swap the touch vertically                                       |
+| TOUCH_type_I2C_HOST                 | The I2C host to use for the touch controller                    |
+| TOUCH_type_I2C_SDA                  | I2C                                                             |
+| TOUCH_type_I2C_SCL                  | I2C                                                             |
+| TOUCH_type_RST                      | I2C                                                             |
+| TOUCH_type_INT                      | I2C                                                             |
+| TOUCH_type_SPI_HOST                 | SPI                                                             |
+| TOUCH_type_SPI_MOSI                 | SPI                                                             |
+| TOUCH_type_SPI_MISO                 | SPI                                                             |
+| TOUCH_type_SPI_SCLK                 | SPI                                                             |
+| TOUCH_type_CS                       |                                                                 |
+| TOUCH_type_DC                       |                                                                 |
+| TOUCH_type_RST                      |                                                                 |
+| TOUCH_type_INT                      |                                                                 |
+| TOUCH_type_SWAP_X                   | Swap the touch horizontally                                     |
+| TOUCH_type_SWAP_Y                   | Swap the touch vertically                                       |
 |                                     |                                                                 |
 | BOARD_HAS_TF                        | The board has a TF slot                                         |
 | TF_CS                               | GPIO of the CS of the TF slot                                   |
