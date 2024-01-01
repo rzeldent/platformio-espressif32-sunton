@@ -56,7 +56,7 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_USES_ST7789                     | LCD uses the ST7789 display driver                              |
 | LCD_USES_GC9A01                     | LCD uses the GC9A01 display driver                              |
 | LCD_USES_ILI9341                    | LCD uses the ILI9341 display driver                             |
-| LCD_USES_DIRECT_IO                  | LCD uses direct IO with the display                             |
+| LCD_USES_RGB_PANEL                  | LCD uses direct IO with the display                             |
 |                                     |                                                                 |
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
@@ -69,32 +69,32 @@ The table below provides some explanation of the variable names. These definitio
 | type_DC                             |                                                                 |
 | type_RST                            |                                                                 |
 |                                     |                                                                 |
-| IO_HSYNC_PULSE_WIDTH                | Direct IO                                                       |
-| IO_HSYNC_BACK_PORCH                 | Direct IO                                                       |
-| IO_HSYNC_FRONT_PORCH                | Direct IO                                                       |
-| IO_VSYNC_PULSE_WIDTH                | Direct IO                                                       |
-| IO_VSYNC_BACK_PORCH                 | Direct IO                                                       |
-| IO_VSYNC_FRONT_PORCH                | Direct IO                                                       |
-| IO_HSYNC                            | Direct IO                                                       |
-| IO_VSYNC                            | Direct IO                                                       |
-| IO_DE                               | Direct IO                                                       |
-| IO_PCLK                             | Direct IO                                                       |
-| IO_R0                               | Direct IO                                                       |
-| IO_R1                               | Direct IO                                                       |
-| IO_R2                               | Direct IO                                                       |
-| IO_R3                               | Direct IO                                                       |
-| IO_R4                               | Direct IO                                                       |
-| IO_G0                               | Direct IO                                                       |
-| IO_G1                               | Direct IO                                                       |
-| IO_G2                               | Direct IO                                                       |
-| IO_G3                               | Direct IO                                                       |
-| IO_G4                               | Direct IO                                                       |
-| IO_G5                               | Direct IO                                                       |
-| IO_B0                               | Direct IO                                                       |
-| IO_B1                               | Direct IO                                                       |
-| IO_B2                               | Direct IO                                                       |
-| IO_B3                               | Direct IO                                                       |
-| IO_B4                               | Direct IO                                                       |
+| RGB_PANEL_HSYNC_PULSE_WIDTH         | Direct IO                                                       |
+| RGB_PANEL_HSYNC_BACK_PORCH          | Direct IO                                                       |
+| RGB_PANEL_HSYNC_FRONT_PORCH         | Direct IO                                                       |
+| RGB_PANEL_VSYNC_PULSE_WIDTH         | Direct IO                                                       |
+| RGB_PANEL_VSYNC_BACK_PORCH          | Direct IO                                                       |
+| RGB_PANEL_VSYNC_FRONT_PORCH         | Direct IO                                                       |
+| RGB_PANEL_HSYNC                     | Direct IO                                                       |
+| RGB_PANEL_VSYNC                     | Direct IO                                                       |
+| RGB_PANEL_DE                        | Direct IO                                                       |
+| RGB_PANEL_PCLK                      | Direct IO                                                       |
+| RGB_PANEL_R0                        | Direct IO                                                       |
+| RGB_PANEL_R1                        | Direct IO                                                       |
+| RGB_PANEL_R2                        | Direct IO                                                       |
+| RGB_PANEL_R3                        | Direct IO                                                       |
+| RGB_PANEL_R4                        | Direct IO                                                       |
+| RGB_PANEL_G0                        | Direct IO                                                       |
+| RGB_PANEL_G1                        | Direct IO                                                       |
+| RGB_PANEL_G2                        | Direct IO                                                       |
+| RGB_PANEL_G3                        | Direct IO                                                       |
+| RGB_PANEL_G4                        | Direct IO                                                       |
+| RGB_PANEL_G5                        | Direct IO                                                       |
+| RGB_PANEL_B0                        | Direct IO                                                       |
+| RGB_PANEL_B1                        | Direct IO                                                       |
+| RGB_PANEL_B2                        | Direct IO                                                       |
+| RGB_PANEL_B3                        | Direct IO                                                       |
+| RGB_PANEL_B4                        | Direct IO                                                       |
 |                                     |                                                                 |
 | LCD_SWAP_XY                         | Swap the X and Y axes for the panel                             |
 | LCD_MIRROR_X                        | Mirror the panel horizontally                                   |
