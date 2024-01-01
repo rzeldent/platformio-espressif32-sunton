@@ -2,8 +2,8 @@
 
 ## This repo contains definitions for the CPU and board information about the hardware
 
-The json files are to be used with PlatformIo and contain defines that specify the location and type of the hardware.
-When this repository is used as a git submodule in the directory ```<project>/boards``` This will be detected automatically.
+These json files are to be used in corperation with PlatformIO and contain defines that specify the type, presence and specifics the hardware.
+PlatformIO detects automatically these boards when this repository is used as a git submodule in the directory ```<project>/boards```.
 
 ## Supported boards
 
@@ -35,7 +35,7 @@ When this repository is used as a git submodule in the directory ```<project>/bo
 | ESP32-8048S070C   | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [800x480](assets/lcd/JC8048B070N.pdf)   | 7.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005928865239.html)  |
 | ESP32-4848S040C   | micro USB | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 240x240                                 | 4.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [NS4168](assets/datasheets/NS4168.pdf)    |                                                | yes  |                                           | 1-3    | [Ali Express](https://www.aliexpress.com/item/1005006320253803.html)  |
 
->[!IMPORTANT]
+>[!NOTE]
 >The additional flash chip (W25Q32JV) is not always mounted on the board.
 
 ## Board defines
@@ -51,9 +51,10 @@ The table below provides some explanation of the variable names. These definitio
 |                                     |                                                                 |
 | BOARD_HAS_PSRAM                     | The boards has PSRAM                                            |
 |                                     |                                                                 |
-| BUTTON_BOOT                    | GPIO of the BOOT pushbutton                                     |
+| BUTTON_BOOT                         | GPIO of the BOOT pushbutton                                     |
 |                                     |                                                                 |
 | LCD_USES_ST7789                     | LCD uses the ST7789 display driver                              |
+| LCD_USES_ST7796                     | LCD uses the ST7796 display driver                              |
 | LCD_USES_GC9A01                     | LCD uses the GC9A01 display driver                              |
 | LCD_USES_ILI9341                    | LCD uses the ILI9341 display driver                             |
 | LCD_USES_RGB_PANEL                  | LCD uses direct IO with the display                             |
@@ -61,7 +62,7 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
 | BCKL                                | GPIO of the backlight                                           |
-| type_SPI_HOST                       | The SPI host to use for the LCD driver                          |
+| type_SPI_HOST                       | The SPI host to use for the LCD driver, eg. ST7789_SPI_HOST     |
 | type_SPI_MOSI                       | SPI                                                             |
 | type_SPI_MISO                       | SPI                                                             |
 | type_SPI_SCLK                       | SPI                                                             |

@@ -10,7 +10,7 @@
       "-DLCD_WIDTH=320",
       "-DLCD_HEIGHT=480",
       "-DBCKL=27",
-      "-DUSES_ST7796",
+      "-DLCD_USES_ST7796",
       "-DST7796_SPI_HOST=SPI2_HOST",
       "-DST7796_SPI_MOSI=13",
       "-DST7796_SPI_MISO=12",
