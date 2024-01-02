@@ -19,7 +19,6 @@
       "-DBCKL=14",
       "-DLCD_USES_ST7789",
       "-DST7789_SPI_HOST=SPI2_HOST",
-      "-DST7789_SPI_MODE=SPI_MODE3",
       "-DST7789_SPI_MOSI=13",
       "-DST7789_SPI_SCLK=12",
       "-DST7789_CS=10",
