@@ -20,7 +20,7 @@
       "-DST7789_RST=-1",
       "-DST7789_VENDOR_CONFIG=NULL",
       "-DLCD_SWAP_XY=false",
-      "-DLCD_MIRROR_X=true",
+      "-DLCD_MIRROR_X=false",
       "-DLCD_MIRROR_Y=false",
       "-DBOARD_HAS_TOUCH",
       "-DTOUCH_USES_GT911",
