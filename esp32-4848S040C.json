@@ -63,7 +63,7 @@
       "-DGT911_RST=GPIO_NUM_NC",
       "-DGT911_INT=GPIO_NUM_NC",
       "-DTOUCH_SWAP_X=false",
-      "-DTOUCH_SWAP_Y=false",
+      "-DTOUCH_SWAP_Y=true",
       "-DBUTTON_BOOT=0",
       "-DHAS_LED",
       "-DLED_GPIO=16",
