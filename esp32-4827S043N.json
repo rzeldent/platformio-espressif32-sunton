@@ -26,6 +26,7 @@
       "-DRGB_PANEL_VSYNC_FRONT_PORCH=8",
       "-DRGB_PANEL_HSYNC=39",
       "-DRGB_PANEL_VSYNC=41",
+      "-DRGB_PANEL_CS=-1",
       "-DRGB_PANEL_DE=40",
       "-DRGB_PANEL_PCLK=42",
       "-DRGB_PANEL_R0=8",
