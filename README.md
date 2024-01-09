@@ -143,8 +143,12 @@ The table below provides some explanation of the variable names. These definitio
 | BOARD_HAS_SPEAK                     | The board has an onboard amplifier for a speaker                |
 | SPEAK                               | GPIO of the SPEAKer                                             |
 |                                     |                                                                 |
-| BOARD_HAS_RELAYS                    | The board has (a) relay(s)                                      |
-| RELAY_BASE                          | GPIO of the first relay                                         |
+| BOARD_HAS_RELAY1                    | The board has relay 1                                           |
+| RELAY_1                             | GPIO of the first relay                                         |
+| BOARD_HAS_RELAY2                    | The board has relay 1                                           |
+| RELAY_2                             | GPIO of the second relay                                        |
+| BOARD_HAS_RELAY3                    | The board has relay 1                                           |
+| RELAY_3                             | GPIO of the third relay                                         |
 
 ## PSRAM
 
