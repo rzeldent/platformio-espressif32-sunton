@@ -59,7 +59,7 @@ The table below provides some explanation of the variable names. These definitio
 | LCD_USES_ST7796                     | LCD uses the ST7796 display driver                              |
 | LCD_USES_GC9A01                     | LCD uses the GC9A01 display driver                              |
 | LCD_USES_ILI9341                    | LCD uses the ILI9341 display driver                             |
-| LCD_USES_RGB_PANEL                  | LCD uses direct IO with the display                             |
+| LCD_USES_ST7262                     | LCD uses the ST7262 display driver                              |
 |                                     |                                                                 |
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
@@ -72,37 +72,37 @@ The table below provides some explanation of the variable names. These definitio
 | type_DC                             | GPIO for the Data or Command                                    |
 | type_RST                            | GPIO for the ReSeT                                              |
 |                                     |                                                                 |
-| RGB_PANEL_HSYNC_PULSE_WIDTH         | Horizontal pulse width                                          |
-| RGB_PANEL_HSYNC_BACK_PORCH          | Horizontal back porch                                           |
-| RGB_PANEL_HSYNC_FRONT_PORCH         | Horizontal front porch                                          |
-| RGB_PANEL_VSYNC_PULSE_WIDTH         | Vertical pulse width                                            |
-| RGB_PANEL_VSYNC_BACK_PORCH          | Vertical back porch                                             |
-| RGB_PANEL_VSYNC_FRONT_PORCH         | Vertical front porch                                            |
-| RGB_PANEL_HSYNC                     | GPIO of the horizontal synch                                    |
+| ST7262_HSYNC_PULSE_WIDTH            | Horizontal pulse width                                          |
+| ST7262_HSYNC_BACK_PORCH             | Horizontal back porch                                           |
+| ST7262_HSYNC_FRONT_PORCH            | Horizontal front porch                                          |
+| ST7262_VSYNC_PULSE_WIDTH            | Vertical pulse width                                            |
+| ST7262_VSYNC_BACK_PORCH             | Vertical back porch                                             |
+| ST7262_VSYNC_FRONT_PORCH            | Vertical front porch                                            |
+| ST7262_HSYNC                        | GPIO of the horizontal synch                                    |
 | ST7701_HSYNC_IDLE_LOW               | 1 if the horizontal sync is low on idle                         |
-| RGB_PANEL_VSYNC                     | GPIO of the vertical synch                                      |
+| ST7262_VSYNC                        | GPIO of the vertical synch                                      |
 | ST7701_VSYNC_IDLE_LOW               | 1 if the vertical sync is low on idle                           |
-| RGB_PANEL_DE                        | GPIO for the Data Enable                                        |
-| RGB_PANEL_PCLK                      | GPIO for the Pixel CLocK                                        |
+| ST7262_DE                           | GPIO for the Data Enable                                        |
+| ST7262_PCLK                         | GPIO for the Pixel CLocK                                        |
 | ST7701_PCLK_ACTIVE_NEG              | 1 if the Pixel clock is active when negative                    |
 | ST7701_PCLK_IDLE_HIGH               | 1 if the pixel clock is idle when high                          |
 | ST7701_PCLK_HZ                      | Frequency in Hertz of the pixel clock                           |
-| RGB_PANEL_R0                        | GPIO for the red bit 0                                          |
-| RGB_PANEL_R1                        | GPIO for the red bit 1                                          |
-| RGB_PANEL_R2                        | GPIO for the red bit 2                                          |
-| RGB_PANEL_R3                        | GPIO for the red bit 3                                          |
-| RGB_PANEL_R4                        | GPIO for the red bit 4                                          |
-| RGB_PANEL_G0                        | GPIO for the green bit 0                                        |
-| RGB_PANEL_G1                        | GPIO for the green bit 1                                        |
-| RGB_PANEL_G2                        | GPIO for the green bit 2                                        |
-| RGB_PANEL_G3                        | GPIO for the green bit 3                                        |
-| RGB_PANEL_G4                        | GPIO for the green bit 4                                        |
-| RGB_PANEL_G5                        | GPIO for the green bit 5                                        |
-| RGB_PANEL_B0                        | GPIO for the blue bit 0                                         |
-| RGB_PANEL_B1                        | GPIO for the blue bit 1                                         |
-| RGB_PANEL_B2                        | GPIO for the blue bit 2                                         |
-| RGB_PANEL_B3                        | GPIO for the blue bit 3                                         |
-| RGB_PANEL_B4                        | GPIO for the blue bit 4                                         |
+| ST7262_R0                           | GPIO for the red bit 0                                          |
+| ST7262_R1                           | GPIO for the red bit 1                                          |
+| ST7262_R2                           | GPIO for the red bit 2                                          |
+| ST7262_R3                           | GPIO for the red bit 3                                          |
+| ST7262_R4                           | GPIO for the red bit 4                                          |
+| ST7262_G0                           | GPIO for the green bit 0                                        |
+| ST7262_G1                           | GPIO for the green bit 1                                        |
+| ST7262_G2                           | GPIO for the green bit 2                                        |
+| ST7262_G3                           | GPIO for the green bit 3                                        |
+| ST7262_G4                           | GPIO for the green bit 4                                        |
+| ST7262_G5                           | GPIO for the green bit 5                                        |
+| ST7262_B0                           | GPIO for the blue bit 0                                         |
+| ST7262_B1                           | GPIO for the blue bit 1                                         |
+| ST7262_B2                           | GPIO for the blue bit 2                                         |
+| ST7262_B3                           | GPIO for the blue bit 3                                         |
+| ST7262_B4                           | GPIO for the blue bit 4                                         |
 |                                     |                                                                 |
 | LCD_SWAP_XY                         | Swap the X and Y axes for the panel                             |
 | LCD_MIRROR_X                        | Mirror the panel horizontally                                   |
@@ -391,7 +391,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 
 ![ESP32-4848S040C](assets/images/esp32-4848S040C.png)
 
-### ESP32-8048S050
+### ESP32-8048S050 C
 
 - USB-C
 - ST7262 / 16 bit parallel interface
@@ -403,7 +403,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ![ESP32-8048S050 front](assets/images/esp32-8048S050-front.png)
 ![ESP32-8048S050 back](assets/images/esp32-8048S050-back.png)
 
-### ESP32-8048S070
+### ESP32-8048S070 C
 
 - USB-C
 - ST7262 / 16 bit parallel interface
