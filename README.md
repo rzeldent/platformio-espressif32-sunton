@@ -7,40 +7,37 @@ PlatformIO detects automatically these boards when this repository is used as a 
 
 ## Supported boards
 
-| Type                  | USB       | CPU                       | Flash | PSRAM | Cores/Speed | Display                                 | Size        | Display interface | Display controller                       | Touch interface    | Touch controller                          | Audio                                     | Flash                                          | LED  | CdS                                       | Relay  | Link                                                                  |
-|---                    |---        |---                        |---    |---    |--           |---                                      |--           |---                |---                                       |---                 |---                                        |---                                        |---                                             |---   |---                                        |---     |---                                                                    |
-| ESP32_1732S019C       | micro USB | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 170x320                                 | 1.9"        | SPI               | [ST7789](assets/datasheets/ST7789.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005059421229.html)  |
-| ESP32_1732S019N       | micro USB | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 170x320                                 | 1.9"        | SPI               | [ST7789](assets/datasheets/ST7789.pdf)   |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005059421229.html)  |
-| ESP32-2424S012C       | USB-C     | ESP32-C3-MINI-1U-XXN4     | 4Mb   |       | 1 x 160Mhz  | 240x240                                 | 1.2" round  | SPI               | [GC9A01A](assets/datasheets/GC9A01A.pdf) | I2C                | [CST816S](assets/datasheets/CST816S.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005453515690.html)  |
-| ESP32-2424S012N       | USB-C     | ESP32-C3-MINI-1U-XXN4     | 4Mb   |       | 1 x 160Mhz  | 240x240                                 | 1.2" round  | SPI               | [GC9A01A](assets/datasheets/GC9A01A.pdf) |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005453515690.html)  |
-| ESP32-2432S024C       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A024N.pdf)   | 2.4"        | SPI               | [ILI9341](assets/datasheets/ILI9341.pdf) | I2C                | [CST816S](assets/datasheets/CST816S.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005005865107357.html)  |
-| ESP32-2432S024N       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A024N.pdf)   | 2.4"        | SPI               | [ILI9341](assets/datasheets/ILI9341.pdf) |                    |                                           | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005005865107357.html)  |
-| ESP32-2432S024R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A024N.pdf)   | 2.4"        | SPI               | [ILI9341](assets/datasheets/ILI9341.pdf) | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005005865107357.html)  |
-| ESP32-2432S028R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A028N.pdf)   | 2.8"        | SPI               | [ILI9341](assets/datasheets/ILI9341.pdf) | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004502250619.html)  |
-| ESP32-2432S028Rv2     | USB-C     | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432B028N.pdf)   | 2.8"        | SPI               | [ILI9341](assets/datasheets/ILI9341.pdf) | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004502250619.html)  |
-| ESP32-2432S032C       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 240x320                                 | 3.2"        | SPI               | [ST7789](assets/datasheets/ST7789.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005006224494145.html)  |
-| ESP32-2432S032N       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 240x320                                 | 3.2"        | SPI               | [ST7789](assets/datasheets/ST7789.pdf)   |                    |                                           | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005006224494145.html)  |
-| ESP32-3248S035C       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 320x480                                 | 3.5"        | SPI               | [ST7796](assets/datasheets/ST7796.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004632953455.html)  |
-| ESP32-2432S032R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 240x320                                 | 3.2"        | SPI               | [ST7789](assets/datasheets/ST7789.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005006224494145.html)  |
-| ESP32-3248S035R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 320x480                                 | 3.5"        | SPI               | [ST7796](assets/datasheets/ST7796.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004632953455.html)  |
-| ESP32-4827S043C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [480x272](assets/lcd/JC4827B043N.pdf)   | 4.3"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005004788147691.html)  |
-| ESP32-4827S043R       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [480x272](assets/lcd/JC4827B043N.pdf)   | 4.3"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005004788147691.html)  |
-| ESP32-8048S043C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 4.3"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005006110360174.html)  |
-| ESP32-8048S043N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 4.3"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005006110360174.html)  |
-| ESP32-8048S043R       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 4.3"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005006110360174.html)  |
-| ESP32-4848S040C_I_Y_1 | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 240x240                                 | 4.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [NS4168](assets/datasheets/NS4168.pdf)    |                                                | yes  |                                           | 1      | [Ali Express](https://www.aliexpress.com/item/1005006320253803.html)  |
-| ESP32-4848S040C_I_Y_3 | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 240x240                                 | 4.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [NS4168](assets/datasheets/NS4168.pdf)    |                                                | yes  |                                           | 1-3    | [Ali Express](https://www.aliexpress.com/item/1005006320253803.html)  |
-| ESP32-8048S050C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 5.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005938915207.html)  |
-| ESP32-8048S050N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 5.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005938915207.html)  |
-| ESP32-8048S050R       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 5.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005938915207.html)  |
-| ESP32-8048S070C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [800x480](assets/lcd/JC8048B070N.pdf)   | 7.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005928865239.html)  |
-| ESP32-8048S070N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [800x480](assets/lcd/JC8048B070N.pdf)   | 7.0"        | Direct            | [ST7701](assets/datasheets/ST7701S.pdf)  |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005928865239.html)  |
+| Type                  | USB       | CPU                       | Flash | PSRAM | Cores/Speed | Display                                 | Size        | Display interface           | Display controller                       | Touch interface    | Touch controller                          | Audio                                     | Flash                                          | LED  | CdS                                       | Relay  | Link                                                                  |
+|---                    |---        |---                        |---    |---    |--           |---                                      |--           |---                          |---                                       |---                 |---                                        |---                                        |---                                             |---   |---                                        |---     |---                                                                    |
+| ESP32_1732S019C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 170x320                                 | 1.9"        | SPI                         | [ST7789](assets/datasheets/ST7789.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005059421229.html)  |
+| ESP32_1732S019N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 170x320                                 | 1.9"        | SPI                         | [ST7789](assets/datasheets/ST7789.pdf)   |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005059421229.html)  |
+| ESP32-2424S012C       | USB-C     | ESP32-C3-MINI-1U-XXN4     | 4Mb   |       | 1 x 160Mhz  | 240x240                                 | 1.2" round  | SPI                         | [GC9A01A](assets/datasheets/GC9A01A.pdf) | I2C                | [CST816S](assets/datasheets/CST816S.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005453515690.html)  |
+| ESP32-2424S012N       | USB-C     | ESP32-C3-MINI-1U-XXN4     | 4Mb   |       | 1 x 160Mhz  | 240x240                                 | 1.2" round  | SPI                         | [GC9A01A](assets/datasheets/GC9A01A.pdf) |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005453515690.html)  |
+| ESP32-2432S024C       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A024N.pdf)   | 2.4"        | SPI                         | [ILI9341](assets/datasheets/ILI9341.pdf) | I2C                | [CST816S](assets/datasheets/CST816S.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005005865107357.html)  |
+| ESP32-2432S024N       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A024N.pdf)   | 2.4"        | SPI                         | [ILI9341](assets/datasheets/ILI9341.pdf) |                    |                                           | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005005865107357.html)  |
+| ESP32-2432S024R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A024N.pdf)   | 2.4"        | SPI                         | [ILI9341](assets/datasheets/ILI9341.pdf) | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005005865107357.html)  |
+| ESP32-2432S028R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432A028N.pdf)   | 2.8"        | SPI                         | [ILI9341](assets/datasheets/ILI9341.pdf) | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004502250619.html)  |
+| ESP32-2432S028Rv2     | USB-C     | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | [240x320](assets/lcd/JC2432B028N.pdf)   | 2.8"        | SPI                         | [ILI9341](assets/datasheets/ILI9341.pdf) | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004502250619.html)  |
+| ESP32-2432S032C       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 240x320                                 | 3.2"        | SPI                         | [ST7789](assets/datasheets/ST7789.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005006224494145.html)  |
+| ESP32-2432S032N       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 240x320                                 | 3.2"        | SPI                         | [ST7789](assets/datasheets/ST7789.pdf)   |                    |                                           | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005006224494145.html)  |
+| ESP32-3248S035C       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 320x480                                 | 3.5"        | SPI                         | [ST7796](assets/datasheets/ST7796.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004632953455.html)  |
+| ESP32-2432S032R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 240x320                                 | 3.2"        | SPI                         | [ST7789](assets/datasheets/ST7789.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005006224494145.html)  |
+| ESP32-3248S035R       | micro USB | ESP32-WROOM-32            | 4Mb   |       | 2 x 240Mhz  | 320x480                                 | 3.5"        | SPI                         | [ST7796](assets/datasheets/ST7796.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  | [FM8002A](assets/datasheets/FM8002A.pdf)  | [W25Q32JV](assets/datasheets/25Q32JVSSIQ.pdf)  | RGB  | [GT36516](assets/datasheets//GT36516.pdf) |        | [Ali Express](https://www.aliexpress.com/item/1005004632953455.html)  |
+| ESP32-4827S043C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [480x272](assets/lcd/JC4827B043N.pdf)   | 4.3"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005004788147691.html)  |
+| ESP32-4827S043R       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [480x272](assets/lcd/JC4827B043N.pdf)   | 4.3"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005004788147691.html)  |
+| ESP32-8048S043C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 4.3"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005006110360174.html)  |
+| ESP32-8048S043N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 4.3"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005006110360174.html)  |
+| ESP32-8048S043R       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 4.3"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005006110360174.html)  |
+| ESP32-4848S040C_I_Y_1 | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 240x240                                 | 4.0"        | Direct 16 bits + 3 wire SPI | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [NS4168](assets/datasheets/NS4168.pdf)    |                                                |      |                                           | 1      | [Ali Express](https://www.aliexpress.com/item/1005006320253803.html)  |
+| ESP32-4848S040C_I_Y_3 | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 240x240                                 | 4.0"        | Direct 16 bits + 3 wire SPI | [ST7701](assets/datasheets/ST7701S.pdf)  | I2C                | [GT911](assets/datasheets//GT911.pdf)     | [NS4168](assets/datasheets/NS4168.pdf)    |                                                |      |                                           | 1-3    | [Ali Express](https://www.aliexpress.com/item/1005006320253803.html)  |
+| ESP32-8048S050C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 5.0"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005938915207.html)  |
+| ESP32-8048S050N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 5.0"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005938915207.html)  |
+| ESP32-8048S050R       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | 800x480                                 | 5.0"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | SPI                | [XPT2046](assets/datasheets/XPT2046.pdf)  |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005938915207.html)  |
+| ESP32-8048S070C       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [800x480](assets/lcd/JC8048B070N.pdf)   | 7.0"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   | I2C                | [GT911](assets/datasheets//GT911.pdf)     |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005928865239.html)  |
+| ESP32-8048S070N       | USB-C     | ESP32-S3-WROOM-1-MCN16R8  | 16Mb  | 8Mb   | 2 x 240Mhz  | [800x480](assets/lcd/JC8048B070N.pdf)   | 7.0"        | Direct 16 bits              | [ST7262](assets/datasheets/ST7262.pdf)   |                    |                                           |                                           |                                                |      |                                           |        | [Ali Express](https://www.aliexpress.com/item/1005005928865239.html)  |
 
 >[!NOTES]
->
->- The additional flash chip (W25Q32JV) is not always mounted on the board.
->- The ESP32-4848S040C relays and I2S audio are shared IO ports (IO1, IO2, IO40).
-   If audio is needed, the 0 ohm resistors R25, R26, and R27 should be moved to R21, R22, and R23
+>The additional flash chip (W25Q32JV) is not always mounted on the board.
 
 ## Board defines
 
@@ -295,37 +292,72 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32_1732S019 N/C
 
 - USB-C
+- ST7789
+- GT911
+![esp32-1732S019](assets/images/esp32-1732S019-front.png)
+![esp32-1732S019](assets/images/esp32-1732S019-back.png)
 
 ### ESP32-2424S012 N/C
 
+- Round
 - USB-C
+- GC9A01
+- CST816S
 - I2C: 1 x SH1.0 4p
-- Battery interface: JST1.25 2p
+- Battery interface: JST 1.25 2p
 
 ![ESP32-2424S012 front](assets/images/esp32-2424S012-front.png)
 ![ESP32-2424S012 back](assets/images/esp32-2424S012-back.png)
 
 ### ESP32-2432S024 N/R/C
 
-- Micro USB
+- USB-C
+- ILI9341
+- XPT2046 / CST816S
+- TF card interface
 - I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
+- Battery interface JST 1.25 2p
 
 ![ESP32-2432S024 front](assets/images/esp32-2432S024-front.png)
 
-### ESP32-2432S028 R
+### ESP32-2432S028R
 
 - Micro USB
+- ILI9341
+- XPT2046
+- TF card interface
 - I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
+- Battery interface JST 1.25 2p
+
+>[!NOTES]
+>There is a special variant with a different screen init sequence, the ESP32-2432S028Rv2.
+> This version has an USB-C connector
 
 ![ESP32-2432S028R back](assets/images/esp32-2432S028R-back.png)
 
-### ESP32-3248S035
+### ESP32-3248S032 N/R/C
 
 - Micro USB
+- ST7789
+- XPT2046 / GT911
+- TF card interface
+- I2C: 2 x JST1.0 4p
+- Power + Serial: JST 1.25 4p
+- Speaker: JST1.25 2p
+- Battery interface JST 1.25 2p
+
+![ESP32-2432S032 back](assets/images/esp32-2432S032-back.jpeg)
+
+### ESP32-3248S035 R/C
+
+- Micro USB
+- ST7796
+- XPT2046 / GT911
+- TF card interface
 - I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
@@ -333,18 +365,38 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ![ESP32-3248S035 front](assets/images/esp32-3248S035-front.png)
 ![ESP32-3248S035 back](assets/images/esp32-3248S035-back.png)
 
-### ESP32-4827S043
+### ESP32-4827S043 N/R/C
 
 - USB-C
+- ST7262 / 16 bit parallel interface
+- GT911 / XPT2046
+- TF card interface
 - I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
 ![ESP32-4827S043 front](assets/images/esp32-4827S043-front.png)
 ![ESP32-4827S043 back](assets/images/esp32-4827S043-back.png)
 
+# ESP32-4848S040 C
+
+- USB-C
+- ST7701 / 16 bit parallel interface + 3 wire SPI
+- GT911 / XPT2046
+- Version with one or three relays
+- 110V - 320V power supply build in!
+
+>[!NOTES]
+>The ESP32-4848S040C relays and I2S audio are shared IO ports (IO1, IO2, IO40).
+ If audio is needed, the 0 ohm resistors R25, R26, and R27 should be moved to R21, R22, and R23
+
+![ESP32-4848S040C](assets/images/esp32-4848S040C.png)
+
 ### ESP32-8048S050
 
 - USB-C
+- ST7262 / 16 bit parallel interface
+- GT911
+- TF card interface
 - I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
@@ -354,6 +406,9 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-8048S070
 
 - USB-C
+- ST7262 / 16 bit parallel interface
+- GT911
+- TF card interface
 - I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
