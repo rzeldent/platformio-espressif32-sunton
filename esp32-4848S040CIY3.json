@@ -13,7 +13,7 @@
       "-DARDUINO_RUNNING_CORE=1",
       "-DARDUINO_EVENT_RUNNING_CORE=1",
       "-DARDUINO_USB_CDC_ON_BOOT=0",
-      "-DESP32_4848S040C",
+      "-DESP32_4848S040CIY3",
       "-DLCD_WIDTH=480",
       "-DLCD_HEIGHT=480",
       "-DBCKL=38",
@@ -38,7 +38,7 @@
       "-DST7701_PCLK=21",
       "-DST7701_PCLK_ACTIVE_NEG=0",
       "-DST7701_PCLK_IDLE_HIGH=0",
-      "-DST7701_PCLK_HZ=16000000",
+      "-DST7701_PCLK_HZ=12000000",
       "-DST7701_R0=11",
       "-DST7701_R1=12",
       "-DST7701_R2=13",
@@ -96,7 +96,7 @@
     "arduino",
     "espidf"
   ],
-  "name": "esp32-4848S040C",
+  "name": "esp32-4848S040CIY3",
   "upload": {
     "flash_size": "16MB",
     "maximum_ram_size": 327680,

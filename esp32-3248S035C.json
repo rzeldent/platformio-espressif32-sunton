@@ -27,7 +27,7 @@
       "-DGT911_I2C_SDA=33",
       "-DGT911_I2C_SCL=32",
       "-DGT911_RST=25",
-      "-DGT911_INT=-1",
+      "-DGT911_INT=GPIO_NUM_NC",
       "-DTOUCH_SWAP_X=false",
       "-DTOUCH_SWAP_Y=false",
       "-DBUTTON_BOOT=0",
