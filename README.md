@@ -4,7 +4,8 @@
 
 These json files are to be used in cooperation with PlatformIO and contain defines that specify the type, presence and specifics the hardware.
 PlatformIO detects automatically these boards when this repository is used as a git submodule in the directory ```<project>/boards```.
-# Supported boards
+
+## Supported boards
 
 | Type                                    | USB       | CPU                       | Flash | PSRAM | Cores/Speed | Display                                 | Size        | Display interface           | Display controller                       | Touch interface    | Touch controller                          | Audio                                     | Flash                                          | LED  | CdS                                       | Relay  | Link                                                                  |
 |---                                      |---        |---                        |---    |---    |--           |---                                      |--           |---                          |---                                       |---                 |---                                        |---                                        |---                                             |---   |---                                        |---     |---                                                                    |
@@ -227,10 +228,10 @@ ESP_ARDUINO_VERSION_MAJOR >= 3
   ledcWrite(RGB_LED_R, 192);
 ```
 
-## Reading the CdS (light sensor)
+## Reading the CdS photo resistor (light sensor)
 
 >[!NOTE]
->Not all boards have a light sensor. Refer to the [supported boards](#supported-boards) to see if this is available.
+>Not all boards have a CdS photo resistor. Refer to the [supported boards](#supported-boards) to see if this is available.
 
 If the board has a CdS photo resistor (Cadmium Sulfide, CdS), the define ```BOARD_HAS_CDS``` is defined.
 The resistor is attached to the analogue input of the ESP32 with two resistors between the GND and the VCC. When the CDS is covered, it's resistance is in the order of mega&Omega; but in bright light can drop to a few 1k&Omega;.
@@ -261,7 +262,7 @@ The ESP32 has a threshold of ~15mV so below 15mV the value is 0.
 ## Controlling the speaker
 
 >[!NOTE]
->Not all boards have a LED. Refer to the Refer to the [supported boards](#supported-boards) to see if this is available.
+>Not all boards have a speaker. Refer to the Refer to the [supported boards](#supported-boards) to see if this is available.
 
 An 8&Omega; speaker can be connected to the output marked SPEAK. This is a 1.25 JST connector.
 
@@ -293,6 +294,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 - USB-C
 - ST7789
 - GT911
+
 ![esp32-1732S019](assets/images/esp32-1732S019-front.png)
 ![esp32-1732S019](assets/images/esp32-1732S019-back.png)
 
@@ -333,8 +335,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 - Battery interface JST 1.25 2p
 
 >[!NOTES]
->There is a special variant with a different screen init sequence, the ESP32-2432S028Rv2.
-> This version has an USB-C connector
+>There is a special variant (USB-C connector) that has a different screen init sequence, the ESP32-2432S028Rv2.
 
 ![ESP32-2432S028R back](assets/images/esp32-2432S028R-back.png)
 
@@ -380,8 +381,8 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 
 - USB-C
 - ST7701 / 16 bit parallel interface + 3 wire SPI
-- GT911 / XPT2046
-- Version with one or three relays
+- GT911
+- Two versions; with one or three relays
 - 110V - 320V power supply build in!
 
 >[!NOTES]
