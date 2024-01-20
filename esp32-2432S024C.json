@@ -28,7 +28,7 @@
       "-DCST816S_I2C_SCL=32",
       "-DCST816S_RST=25",
       "-DCST816S_INT=21",
-      "-DTOUCH_SWAP_X=true",
+      "-DTOUCH_SWAP_X=false",
       "-DTOUCH_SWAP_Y=false",
       "-DBUTTON_BOOT=0",
       "-DBOARD_HAS_TF",
