@@ -326,6 +326,9 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 - Speaker: JST1.25 2p
 - Battery interface JST 1.25 2p
 
+![ESP32-2432S022 front](assets/images/esp32-2432S022-front.png)
+![ESP32-2432S022 back](assets/images/esp32-2432S022-back.png)
+
 ### ESP32-2432S024 N/R/C
 
 - USB-C
