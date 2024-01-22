@@ -321,7 +321,6 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 - ILI9341
 - CST816S
 - TF card interface
-- I2C: 2 x JST1.0 4p
 - Power + Serial: JST1.25 4p
 - Speaker: JST1.25 2p
 - Battery interface JST 1.25 2p
