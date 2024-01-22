@@ -17,6 +17,7 @@
       "-DST7796_SPI_SCLK=14",
       "-DST7796_CS=15",
       "-DST7796_DC=2",
+      "-DST7796_PCLK_HZ=24000000",
       "-DST7796_VENDOR_CONFIG=NULL",
       "-DLCD_SWAP_XY=false",
       "-DLCD_MIRROR_X=true",

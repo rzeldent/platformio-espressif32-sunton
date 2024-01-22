@@ -17,6 +17,7 @@
       "-DILI9341_SPI_SCLK=14",
       "-DILI9341_CS=15",
       "-DILI9341_DC=2",
+      "-DILI9341_PCLK_HZ=24000000",
       "-DILI9341_VENDOR_CONFIG=NULL",
       "-DLCD_SWAP_XY=false",
       "-DLCD_MIRROR_X=true",

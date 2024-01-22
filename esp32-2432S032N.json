@@ -18,6 +18,7 @@
       "-DST7789_CS=15",
       "-DST7789_DC=2",
       "-DST7789_RST=GPIO_NUM_NC",
+      "-DST7789_PCLK_HZ=24000000",
       "-DST7789_VENDOR_CONFIG=NULL",
       "-DLCD_SWAP_XY=false",
       "-DLCD_MIRROR_X=false",
