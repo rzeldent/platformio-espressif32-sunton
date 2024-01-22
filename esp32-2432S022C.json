@@ -10,7 +10,7 @@
       "-DLCD_WIDTH=240",
       "-DLCD_HEIGHT=320",
       "-DBCKL=0",
-      "-DLCD_USES_ST7789",
+      "-DLCD_USES_ST7789_3WIRE",
       "-DST7789_CS=17",
       "-DST7789_RS=16",
       "-DST7789_WR=4",
