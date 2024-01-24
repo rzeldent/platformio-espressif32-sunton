@@ -13,7 +13,7 @@
       "'-D LCD_WIDTH=240'",
       "'-D LCD_HEIGHT=240'",
       "'-D BCKL=3'",
-      "'-D HAS_GC9A01'",
+      "'-D BOARD_HAS_GC9A01'",
       "'-D GC9A01_SPI_HOST=SPI2_HOST'",
       "'-D GC9A01_SPI_DMA_CHANNEL=SPI_DMA_CH_AUTO'",
       "'-D GC9A01_SPI_BUS_MOSI_IO_NUM=7'",
