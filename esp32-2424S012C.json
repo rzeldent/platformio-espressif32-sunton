@@ -67,7 +67,6 @@
       "'-D CST816S_TOUCH_CONFIG_FLAGS_MIRROR_Y=0'",
       "'-D TOUCH_SWAP_X=false'",
       "'-D TOUCH_SWAP_Y=false'",
-      "'-D BUTTON_BOOT=0'"
     ],
     "mcu": "esp32c3",
     "variant": "esp32c3"

@@ -37,7 +37,6 @@
       "'-D LCD_SWAP_XY=false'",
       "'-D LCD_MIRROR_X=true'",
       "'-D LCD_MIRROR_Y=false'",
-      "'-D BUTTON_BOOT=0'",
       "'-D BOARD_HAS_TF'",
       "'-D TF_CS=5'",
       "'-D TF_SPI_MOSI=23'",

@@ -55,7 +55,6 @@
       "'-D CST816S_TOUCH_CONFIG_FLAGS_MIRROR_Y=0'",
       "'-D TOUCH_SWAP_X=false'",
       "'-D TOUCH_SWAP_Y=false'",
-      "'-D BUTTON_BOOT=0'",
       "'-D BOARD_HAS_TF'",
       "'-D TF_CS=5'",
       "'-D TF_SPI_MOSI=23'",

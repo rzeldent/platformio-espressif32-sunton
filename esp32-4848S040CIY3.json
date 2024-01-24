@@ -107,7 +107,6 @@
       "'-D GT911_TOUCH_CONFIG_FLAGS_MIRROR_Y=0'",
       "'-D TOUCH_SWAP_X=false'",
       "'-D TOUCH_SWAP_Y=true'",
-      "'-D BUTTON_BOOT=0'",
       "'-D BOARD_HAS_LED'",
       "'-D LED_GPIO=16'",
       "'-D BOARD_HAS_RELAY1'",

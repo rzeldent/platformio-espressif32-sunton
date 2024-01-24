@@ -40,7 +40,6 @@
       "'-D LCD_SWAP_XY=false'",
       "'-D LCD_MIRROR_X=true'",
       "'-D LCD_MIRROR_Y=false'",
-      "'-D BUTTON_BOOT=0'"
     ],
     "mcu": "esp32c3",
     "variant": "esp32c3"
