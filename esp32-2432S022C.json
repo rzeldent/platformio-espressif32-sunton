@@ -10,7 +10,7 @@
       "'-D LCD_WIDTH=240'",
       "'-D LCD_HEIGHT=320'",
       "'-D BCKL=0'",
-      "'-D BOARD_HAS_ST7789_I80'",
+      "'-D LCD_ST7789_SPI_I80'",
       "'-D ST7789_CS=17'",
       "'-D ST7789_RS=16'",
       "'-D ST7789_WR=4'",

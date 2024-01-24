@@ -62,12 +62,12 @@ The table below provides some explanation of the variable names. These definitio
 |                                     |                                                                 |
 | BUTTON_BOOT                         | GPIO of the BOOT pushbutton                                     |
 |                                     |                                                                 |
-| BOARD_HAS_ST7701                    | LCD uses the ST7701 display driver                              |
-| BOARD_HAS_ST7789                    | LCD uses the ST7789 display driver                              |
-| BOARD_HAS_ST7796                    | LCD uses the ST7796 display driver                              |
-| BOARD_HAS_GC9A01                    | LCD uses the GC9A01 display driver                              |
-| BOARD_HAS_ILI9341                   | LCD uses the ILI9341 display driver                             |
-| BOARD_HAS_ST7262                    | LCD uses the ST7262 display driver                              |
+| LCD_ST7701_PAR                    | LCD uses the ST7701 display driver                              |
+| LCD_ST7789_SPI                    | LCD uses the ST7789 display driver                              |
+| LCD_ST7796_SPI                    | LCD uses the ST7796 display driver                              |
+| LCD_GC9A01_SPI                    | LCD uses the GC9A01 display driver                              |
+| LCD_ILI9341_SPI                   | LCD uses the ILI9341 display driver                             |
+| LCD_ST7262_PAR                    | LCD uses the ST7262 display driver                              |
 |                                     |                                                                 |
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |

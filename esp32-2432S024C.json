@@ -10,7 +10,7 @@
       "'-D LCD_WIDTH=240'",
       "'-D LCD_HEIGHT=320'",
       "'-D BCKL=27'",
-      "'-D BOARD_HAS_ILI9341'",
+      "'-D LCD_ILI9341_SPI'",
       "'-D ILI9341_SPI_HOST=SPI2_HOST'",
       "'-D ILI9341_SPI_DMA_CHANNEL=SPI_DMA_CH_AUTO'",
       "'-D ILI9341_SPI_BUS_MOSI_IO_NUM=13'",
