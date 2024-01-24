@@ -72,7 +72,7 @@
       "'-D GT911_TOUCH_CONFIG_FLAGS_MIRROR_X=0'",
       "'-D GT911_TOUCH_CONFIG_FLAGS_MIRROR_Y=0'",
       "'-D TOUCH_SWAP_X=false'",
-      "'-D TOUCH_SWAP_Y=false'",
+      "'-D TOUCH_SWAP_Y=false'"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
