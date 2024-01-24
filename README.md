@@ -5,6 +5,8 @@
 These json files are to be used in cooperation with PlatformIO and contain defines that specify the type, presence and specifics the hardware.
 PlatformIO detects automatically these boards when this repository is used as a git submodule in the directory ```<project>/boards```.
 
+These defines are used by the LVGL drivers for these boards: [esp32-smartdisplay](https://github.com/rzeldent/esp32-smartdisplay).
+
 ## Supported boards
 
 | Type                                      | USB       | CPU                       | Flash | PSRAM | Cores/Speed | Display                                 | Size        | Display interface           | Display controller                        | Touch interface    | Touch controller                          | Audio                                     | Flash                                         | LED   | CdS                                       | Relay  | Link                                                                  |
@@ -43,6 +45,7 @@ PlatformIO detects automatically these boards when this repository is used as a 
 >
 >- The additional flash chip (W25Q32JV) is not always mounted on the board.
 >- Some boards have different revisions/versions and require a different definition or custom initialization display vendor string. e.g. 2432S028R/v2 and 8048S070Cv11!
+>- Development is still ongoing for the ESP32-2432S022C
 
 ## Board defines
 
@@ -59,12 +62,12 @@ The table below provides some explanation of the variable names. These definitio
 |                                     |                                                                 |
 | BUTTON_BOOT                         | GPIO of the BOOT pushbutton                                     |
 |                                     |                                                                 |
-| LCD_USES_ST7701                     | LCD uses the ST7701 display driver                              |
-| LCD_USES_ST7789                     | LCD uses the ST7789 display driver                              |
-| LCD_USES_ST7796                     | LCD uses the ST7796 display driver                              |
-| LCD_USES_GC9A01                     | LCD uses the GC9A01 display driver                              |
-| LCD_USES_ILI9341                    | LCD uses the ILI9341 display driver                             |
-| LCD_USES_ST7262                     | LCD uses the ST7262 display driver                              |
+| BOARD_HAS_ST7701                    | LCD uses the ST7701 display driver                              |
+| BOARD_HAS_ST7789                    | LCD uses the ST7789 display driver                              |
+| BOARD_HAS_ST7796                    | LCD uses the ST7796 display driver                              |
+| BOARD_HAS_GC9A01                    | LCD uses the GC9A01 display driver                              |
+| BOARD_HAS_ILI9341                   | LCD uses the ILI9341 display driver                             |
+| BOARD_HAS_ST7262                    | LCD uses the ST7262 display driver                              |
 |                                     |                                                                 |
 | LCD_WIDTH                           | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT                          | The height of the LCD panel in pixels                           |
@@ -309,8 +312,9 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 - USB-C
 - GC9A01
 - CST816S
-- I2C: 1 x SH1.0 4p
-- Battery interface: JST 1.25 2p
+- Switch
+- Serial + Power: SH1.0 4p
+- Lithium Battery interface: JST 1.25 2p
 
 ![ESP32-2424S012 front](assets/images/esp32-2424S012-front.png)
 ![ESP32-2424S012 back](assets/images/esp32-2424S012-back.png)

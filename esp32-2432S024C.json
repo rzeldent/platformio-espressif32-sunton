@@ -38,7 +38,7 @@
       "'-D LCD_MIRROR_X=true'",
       "'-D LCD_MIRROR_Y=false'",
       "'-D BOARD_HAS_TOUCH'",
-      "'-D BOARD_HAS_CST816S'",
+      "'-D TOUCH_CST816S_I2C'",
       "'-D CST816S_I2C_HOST=0'",
       "'-D CST816S_I2C_CONFIG_SDA_IO_NUM=33'",
       "'-D CST816S_I2C_CONFIG_SCL_IO_NUM=32'",
