@@ -10,7 +10,7 @@
       "'-D LCD_WIDTH=240'",
       "'-D LCD_HEIGHT=320'",
       "'-D BCKL=27'",
-      "'-D LCD_IPS",
+      "'-D LCD_IPS'",
       "'-D LCD_ST7789_SPI'",
       "'-D ST7789_SPI_HOST=SPI2_HOST'",
       "'-D ST7789_SPI_DMA_CHANNEL=SPI_DMA_CH_AUTO'",
