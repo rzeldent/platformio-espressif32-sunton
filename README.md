@@ -134,10 +134,11 @@ The table below provides some explanation of the variable names. These definitio
 | type_SPI_SCLK            | SPI SCLK                                                        |
 | type_CS                  | GPIO for the Chip Select                                        |
 | type_DC                  | GPIO for the Data or Command                                    |
-| type_RST                 | GPIO for the ReSeT                                              |
-| type_RST                 | GPIO for the ReSeT                                              |
+| type_RST                 | GPIO for the Reset                                              |
+| type_RST                 | GPIO for the Reset                                              |
 | type_INT                 | GPIO for the INTerrupt                                          |
 |                          |                                                                 |
+| TOUCH_SWAP_XY            | Swap horizontally and vertically                                |
 | TOUCH_SWAP_X             | Swap the touch horizontally                                     |
 | TOUCH_SWAP_Y             | Swap the touch vertically                                       |
 |                          |                                                                 |
