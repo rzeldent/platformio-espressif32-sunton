@@ -67,6 +67,7 @@
       "'-D XPT2046_TOUCH_CONFIG_FLAGS_SWAP_XY=0'",
       "'-D XPT2046_TOUCH_CONFIG_FLAGS_MIRROR_X=0'",
       "'-D XPT2046_TOUCH_CONFIG_FLAGS_MIRROR_Y=0'",
+      "'-D TOUCH_SWAP_XY=false'",
       "'-D TOUCH_SWAP_X=false'",
       "'-D TOUCH_SWAP_Y=false'",
       "'-D BOARD_HAS_TF'",
