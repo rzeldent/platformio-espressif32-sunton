@@ -411,7 +411,8 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 > The ESP32-4848S040C relays and I2S audio are shared IO ports (IO1, IO2, IO40).
 > If audio is needed, the 0 ohm resistors R25, R26, and R27 should be moved to R21, R22, and R23
 
-![ESP32-4848S040C](assets/images/esp32-4848S040C.png)
+![ESP32-4848S040C front](assets/images/esp32-4848S040C-front.png)
+![ESP32-4848S040C back](assets/images/esp32-4848S040C-back.jpg)
 
 ### ESP32-8048S050 N/R/C
 
