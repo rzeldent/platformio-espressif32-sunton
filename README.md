@@ -434,5 +434,9 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 - I2C: JST1.0 4p
 - Power + Serial: JST1.25 4p
 
+>[!NOTES]
+>There are different versions present with a difference in the mapping for the colors from the GPIOs to RGB.
+>Known versions are 1.1 and 1.3.
+
 ![ESP32-8048S070 front](assets/images/esp32-8048S070-front.png)
 ![ESP32-8048S070 back](assets/images/esp32-8048S070-back.png)
