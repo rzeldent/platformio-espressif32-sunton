@@ -9,6 +9,8 @@
       "'-D ESP32_2432S032C'",
       "'-D LCD_WIDTH=240'",
       "'-D LCD_HEIGHT=320'",
+      "'-D LVGL_BUFFER_PIXELS=(LCD_WIDTH*LCD_HEIGHT/4)'",
+      "'-D LVGL_BUFFER_MALLOC_FLAGS=(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)'",
       "'-D BCKL=27'",
       "'-D LCD_IPS'",
       "'-D LCD_ST7789_SPI'",
