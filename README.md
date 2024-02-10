@@ -45,7 +45,6 @@ These defines are used by the LVGL drivers for these boards: [esp32-smartdisplay
 >
 > - The additional flash chip (W25Q32JV) is not always mounted on the board.
 > - Some boards have different revisions/versions and require a different definition or custom initialization display vendor string. e.g. 2432S028R/v2 and 8048S070Cv11!
-> - Development is still ongoing for the ESP32-2432S022C
 
 ## Board defines
 
@@ -62,16 +61,17 @@ The table below provides some explanation of the variable names. These definitio
 |                          |                                                                 |
 | BUTTON_BOOT              | GPIO of the BOOT pushbutton                                     |
 |                          |                                                                 |
-| LCD_ST7701_PAR           | LCD uses the ST7701 display driver                              |
-| LCD_ST7789_SPI           | LCD uses the ST7789 display driver                              |
-| LCD_ST7796_SPI           | LCD uses the ST7796 display driver                              |
-| LCD_GC9A01_SPI           | LCD uses the GC9A01 display driver                              |
-| LCD_ILI9341_SPI          | LCD uses the ILI9341 display driver                             |
-| LCD_ST7262_PAR           | LCD uses the ST7262 display driver                              |
+| LCD_ST7701_PAR           | LCD uses the ST7701 display driver (Parallel)                   |
+| LCD_ST7789_SPI           | LCD uses the ST7789 display driver (SPI)                        |
+| LCD_ST7789_I80           | LCD uses the ST7789 display driver (I8080 mode)                 |
+| LCD_ST7796_SPI           | LCD uses the ST7796 display driver (SPI)                        |
+| LCD_GC9A01_SPI           | LCD uses the GC9A01 display driver (SPI)                        |
+| LCD_ILI9341_SPI          | LCD uses the ILI9341 display driver (SPI)                       |
+| LCD_ST7262_PAR           | LCD uses the ST7262 display driver (Parallel)                   |
 |                          |                                                                 |
 | LCD_WIDTH                | The width of the LCD panel in pixels                            |
 | LCD_HEIGHT               | The height of the LCD panel in pixels                           |
-| BCKL                     | GPIO of the backlight                                           |
+| BCKL_GPIO                | GPIO of the backlight                                           |
 | type_SPI_HOST            | The SPI host to use for the LCD driver, eg. ST7789_SPI_HOST     |
 | type_SPI_MOSI            | SPI MOSI                                                        |
 | type_SPI_MISO            | SPI MISO                                                        |
@@ -323,7 +323,7 @@ The audio is a bit distorted. [HexeguitarDIY](https://github.com/hexeguitar/ESP3
 ### ESP32-2432S022 N/C
 
 - USB-C
-- ILI9341
+- ST7789
 - CST816S
 - TF card interface
 - Power + Serial: JST1.25 4p
