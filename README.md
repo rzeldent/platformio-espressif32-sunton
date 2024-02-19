@@ -63,7 +63,7 @@ The table below provides some explanation of the variable names. These definitio
 |                          |                                                                 |
 | LCD_ST7701_PAR           | LCD uses the ST7701 display driver (Parallel)                   |
 | LCD_ST7789_SPI           | LCD uses the ST7789 display driver (SPI)                        |
-| LCD_ST7789_I80           | LCD uses the ST7789 display driver (I8080 mode)                 |
+| LCD_ST7789_I80           | LCD uses the ST7789 display driver (I80 mode)                   |
 | LCD_ST7796_SPI           | LCD uses the ST7796 display driver (SPI)                        |
 | LCD_GC9A01_SPI           | LCD uses the GC9A01 display driver (SPI)                        |
 | LCD_ILI9341_SPI          | LCD uses the ILI9341 display driver (SPI)                       |
