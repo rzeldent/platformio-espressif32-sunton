@@ -43,6 +43,8 @@
       "'-D LCD_MIRROR_X=true'",
       "'-D LCD_MIRROR_Y=false'",
       "'-D BOARD_HAS_TOUCH'",
+      "'-D CONFIG_ESP_LCD_TOUCH_MAX_POINTS=1'",
+      "'-D CONFIG_ESP_LCD_TOUCH_MAX_BUTTONS=0'",
       "'-D TOUCH_CST816S_I2C'",
       "'-D CST816S_I2C_HOST=I2C_NUM_0'",
       "'-D CST816S_I2C_CONFIG_SDA_IO_NUM=33'",
