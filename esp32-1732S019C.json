@@ -76,9 +76,9 @@
       "'-D GT911_TOUCH_CONFIG_INT_GPIO_NUM=8'",
       "'-D GT911_TOUCH_CONFIG_LEVELS_RESET=0'",
       "'-D GT911_TOUCH_CONFIG_LEVELS_INTERRUPT=0'",
-      "'-D TOUCH_SWAP_XY=false'",
-      "'-D TOUCH_SWAP_X=false'",
-      "'-D TOUCH_SWAP_Y=false'"
+      "'-D TOUCH_MIRROR_XY=false'",
+      "'-D TOUCH_MIRROR_X=false'",
+      "'-D TOUCH_MIRROR_Y=false'"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
