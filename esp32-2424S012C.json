@@ -17,6 +17,7 @@
       "'-D LVGL_BUFFER_PIXELS=(LCD_WIDTH*LCD_HEIGHT/4)'",
       "'-D LVGL_BUFFER_MALLOC_FLAGS=(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)'",
       "'-D GPIO_BCKL=3'",
+      "'-D LCD_IPS'",
       "'-D LCD_GC9A01_SPI'",
       "'-D GC9A01_SPI_HOST=SPI2_HOST'",
       "'-D GC9A01_SPI_DMA_CHANNEL=SPI_DMA_CH_AUTO'",
@@ -48,7 +49,10 @@
       "'-D LCD_MIRROR_X=true'",
       "'-D LCD_MIRROR_Y=false'",
       "'-D BOARD_HAS_TOUCH'",
+      "'-D CONFIG_ESP_LCD_TOUCH_MAX_POINTS=1'",
+      "'-D CONFIG_ESP_LCD_TOUCH_MAX_BUTTONS=0'",
       "'-D TOUCH_CST816S_I2C'",
+      "'-D CST816S_IO_I2C_CONFIG_DEV_ADDRESS=CST816S_IO_I2C_CONFIG_DEV_ADDRESS_15'",
       "'-D CST816S_I2C_HOST=I2C_NUM_0'",
       "'-D CST816S_I2C_CONFIG_SDA_IO_NUM=4'",
       "'-D CST816S_I2C_CONFIG_SCL_IO_NUM=5'",
@@ -69,9 +73,9 @@
       "'-D CST816S_TOUCH_CONFIG_INT_GPIO_NUM=0'",
       "'-D CST816S_TOUCH_CONFIG_LEVELS_RESET=0'",
       "'-D CST816S_TOUCH_CONFIG_LEVELS_INTERRUPT=0'",
-      "'-D TOUCH_SWAP_XY=false'",
-      "'-D TOUCH_SWAP_X=false'",
-      "'-D TOUCH_SWAP_Y=false'"
+      "'-D TOUCH_MIRROR_XY=false'",
+      "'-D TOUCH_MIRROR_X=false'",
+      "'-D TOUCH_MIRROR_Y=false'"
     ],
     "mcu": "esp32c3",
     "variant": "esp32c3"
