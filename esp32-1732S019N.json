@@ -50,8 +50,8 @@
       "'-D DISPLAY_SWAP_XY=false'",
       "'-D DISPLAY_MIRROR_X=false'",
       "'-D DISPLAY_MIRROR_Y=false'",
-      "'-D LCD_GAP_X=35'",
-      "'-D LCD_GAP_Y=0'"
+      "'-D DISPLAY_GAP_X=35'",
+      "'-D DISPLAY_GAP_Y=0'"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",

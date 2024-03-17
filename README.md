@@ -115,8 +115,8 @@ The table below provides some explanation of the variable names. These definitio
 | DISPLAY_SWAP_XY              | Swap the X and Y axes for the panel                             |
 | DISPLAY_MIRROR_X             | Mirror the panel horizontally                                   |
 | DISPLAY_MIRROR_Y             | Mirror the panel vertically                                     |
-| LCD_GAP_X                | The horizontal gap in pixels before the panel                   |
-| LCD_GAP_Y                | The vertical gap in pixels before the panel                     |
+| DISPLAY_GAP_X                | The horizontal gap in pixels before the panel                   |
+| DISPLAY_GAP_Y                | The vertical gap in pixels before the panel                     |
 |                          |                                                                 |
 | BOARD_HAS_TOUCH          | The panel has a touch interface                                 |
 | TOUCH_USES_GT911         | Touch uses the GT911 capacitive touch controller                |
