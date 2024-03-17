@@ -61,18 +61,18 @@ The table below provides some explanation of the variable names. These definitio
 |                          |                                                                 |
 | BUTTON_BOOT              | GPIO of the BOOT pushbutton                                     |
 |                          |                                                                 |
-| DISPLAY_ST7701_PAR           | LCD uses the ST7701 display driver (Parallel)                   |
-| DISPLAY_ST7789_SPI           | LCD uses the ST7789 display driver (SPI)                        |
-| DISPLAY_ST7789_I80           | LCD uses the ST7789 display driver (I80 mode)                   |
-| DISPLAY_ST7796_SPI           | LCD uses the ST7796 display driver (SPI)                        |
-| DISPLAY_GC9A01_SPI           | LCD uses the GC9A01 display driver (SPI)                        |
-| DISPLAY_ILI9341_SPI          | LCD uses the ILI9341 display driver (SPI)                       |
-| DISPLAY_ST7262_PAR           | LCD uses the ST7262 display driver (Parallel)                   |
+| DISPLAY_ST7701_PAR       | Display uses the ST7701 driver (Parallel)                       |
+| DISPLAY_ST7789_SPI       | Display uses the ST7789 driver (SPI)                            |
+| DISPLAY_ST7789_I80       | Display uses the ST7789 driver (I80 mode)                       |
+| DISPLAY_ST7796_SPI       | Display uses the ST7796 driver (SPI)                            |
+| DISPLAY_GC9A01_SPI       | Display uses the GC9A01 driver (SPI)                            |
+| DISPLAY_ILI9341_SPI      | Display uses the ILI9341 driver (SPI)                           |
+| DISPLAY_ST7262_PAR       | Display uses the ST7262 driver (Parallel)                       |
 |                          |                                                                 |
-| DISPLAY_WIDTH                | The width of the LCD panel in pixels                            |
-| DISPLAY_HEIGHT               | The height of the LCD panel in pixels                           |
+| DISPLAY_WIDTH            | The width of the display panel in pixels                        |
+| DISPLAY_HEIGHT           | The height of the display panel in pixels                       |
 | BCKL_GPIO                | GPIO of the backlight                                           |
-| type_SPI_HOST            | The SPI host to use for the LCD driver, eg. ST7789_SPI_HOST     |
+| type_SPI_HOST            | The SPI host to use for the display driver, eg. ST7789_SPI_HOST |
 | type_SPI_MOSI            | SPI MOSI                                                        |
 | type_SPI_MISO            | SPI MISO                                                        |
 | type_SPI_SCLK            | SPI SCLK                                                        |
@@ -112,11 +112,11 @@ The table below provides some explanation of the variable names. These definitio
 | ST7262_B3                | GPIO for the blue bit 3                                         |
 | ST7262_B4                | GPIO for the blue bit 4                                         |
 |                          |                                                                 |
-| DISPLAY_SWAP_XY              | Swap the X and Y axes for the panel                             |
-| DISPLAY_MIRROR_X             | Mirror the panel horizontally                                   |
-| DISPLAY_MIRROR_Y             | Mirror the panel vertically                                     |
-| DISPLAY_GAP_X                | The horizontal gap in pixels before the panel                   |
-| DISPLAY_GAP_Y                | The vertical gap in pixels before the panel                     |
+| DISPLAY_SWAP_XY          | Swap the X and Y axes for the panel                             |
+| DISPLAY_MIRROR_X         | Mirror the panel horizontally                                   |
+| DISPLAY_MIRROR_Y         | Mirror the panel vertically                                     |
+| DISPLAY_GAP_X            | The horizontal gap in pixels before the panel                   |
+| DISPLAY_GAP_Y            | The vertical gap in pixels before the panel                     |
 |                          |                                                                 |
 | BOARD_HAS_TOUCH          | The panel has a touch interface                                 |
 | TOUCH_USES_GT911         | Touch uses the GT911 capacitive touch controller                |
@@ -139,7 +139,7 @@ The table below provides some explanation of the variable names. These definitio
 | type_RST                 | GPIO for the Reset                                              |
 | type_INT                 | GPIO for the INTerrupt                                          |
 |                          |                                                                 |
-| TOUCH_SWAP_XY          | Swap horizontally and vertically                                |
+| TOUCH_SWAP_XY            | Swap horizontally and vertically                                |
 | TOUCH_MIRROR_X           | Swap the touch horizontally                                     |
 | TOUCH_MIRROR_Y           | Swap the touch vertically                                       |
 |                          |                                                                 |
