@@ -57,119 +57,120 @@ This is used by the [esp32-smartdisplay](https://github.com/rzeldent/esp32-smart
 
 The table below provides some explanation of the variable names. These definitions might still be incomplete.
 
-| Define                   | Explanation                                                     |
-| ------------------------ | --------------------------------------------------------------- |
-| ESP32_wwhhS0ddN/R/C      | The board name, e.g. 2423S012C                                  |
-|                          |                                                                 |
-| BOARD_HAS_PSRAM          | The boards has PSRAM                                            |
-|                          |                                                                 |
-| BUTTON_BOOT              | GPIO of the BOOT pushbutton                                     |
-|                          |                                                                 |
-| DISPLAY_ST7701_PAR       | Display uses the ST7701 driver (Parallel)                       |
-| DISPLAY_ST7789_SPI       | Display uses the ST7789 driver (SPI)                            |
-| DISPLAY_ST7789_I80       | Display uses the ST7789 driver (I80 mode)                       |
-| DISPLAY_ST7796_SPI       | Display uses the ST7796 driver (SPI)                            |
-| DISPLAY_GC9A01_SPI       | Display uses the GC9A01 driver (SPI)                            |
-| DISPLAY_ILI9341_SPI      | Display uses the ILI9341 driver (SPI)                           |
-| DISPLAY_ST7262_PAR       | Display uses the ST7262 driver (Parallel)                       |
-|                          |                                                                 |
-| DISPLAY_WIDTH            | The width of the display panel in pixels                        |
-| DISPLAY_HEIGHT           | The height of the display panel in pixels                       |
-| BCKL_GPIO                | GPIO of the backlight                                           |
-| type_SPI_HOST            | The SPI host to use for the display driver, eg. ST7789_SPI_HOST |
-| type_SPI_MOSI            | SPI MOSI                                                        |
-| type_SPI_MISO            | SPI MISO                                                        |
-| type_SPI_SCLK            | SPI SCLK                                                        |
-| type_CS                  | GPIO for the Chip Select                                        |
-| type_DC                  | GPIO for the Data or Command                                    |
-| type_RST                 | GPIO for the ReSeT                                              |
-|                          |                                                                 |
-| ST7262_HSYNC_PULSE_WIDTH | Horizontal pulse width                                          |
-| ST7262_HSYNC_BACK_PORCH  | Horizontal back porch                                           |
-| ST7262_HSYNC_FRONT_PORCH | Horizontal front porch                                          |
-| ST7262_VSYNC_PULSE_WIDTH | Vertical pulse width                                            |
-| ST7262_VSYNC_BACK_PORCH  | Vertical back porch                                             |
-| ST7262_VSYNC_FRONT_PORCH | Vertical front porch                                            |
-| ST7262_HSYNC             | GPIO of the horizontal synch                                    |
-| ST7701_HSYNC_IDLE_LOW    | 1 if the horizontal sync is low on idle                         |
-| ST7262_VSYNC             | GPIO of the vertical synch                                      |
-| ST7701_VSYNC_IDLE_LOW    | 1 if the vertical sync is low on idle                           |
-| ST7262_DE                | GPIO for the Data Enable                                        |
-| ST7262_PCLK              | GPIO for the Pixel CLocK                                        |
-| ST7701_PCLK_ACTIVE_NEG   | 1 if the Pixel clock is active when negative                    |
-| ST7701_PCLK_IDLE_HIGH    | 1 if the pixel clock is idle when high                          |
-| ST7701_PCLK_HZ           | Frequency in Hertz of the pixel clock                           |
-| ST7262_R0                | GPIO for the red bit 0                                          |
-| ST7262_R1                | GPIO for the red bit 1                                          |
-| ST7262_R2                | GPIO for the red bit 2                                          |
-| ST7262_R3                | GPIO for the red bit 3                                          |
-| ST7262_R4                | GPIO for the red bit 4                                          |
-| ST7262_G0                | GPIO for the green bit 0                                        |
-| ST7262_G1                | GPIO for the green bit 1                                        |
-| ST7262_G2                | GPIO for the green bit 2                                        |
-| ST7262_G3                | GPIO for the green bit 3                                        |
-| ST7262_G4                | GPIO for the green bit 4                                        |
-| ST7262_G5                | GPIO for the green bit 5                                        |
-| ST7262_B0                | GPIO for the blue bit 0                                         |
-| ST7262_B1                | GPIO for the blue bit 1                                         |
-| ST7262_B2                | GPIO for the blue bit 2                                         |
-| ST7262_B3                | GPIO for the blue bit 3                                         |
-| ST7262_B4                | GPIO for the blue bit 4                                         |
-|                          |                                                                 |
-| DISPLAY_SWAP_XY          | Swap the X and Y axes for the panel                             |
-| DISPLAY_MIRROR_X         | Mirror the panel horizontally                                   |
-| DISPLAY_MIRROR_Y         | Mirror the panel vertically                                     |
-| DISPLAY_GAP_X            | The horizontal gap in pixels before the panel                   |
-| DISPLAY_GAP_Y            | The vertical gap in pixels before the panel                     |
-|                          |                                                                 |
-| BOARD_HAS_TOUCH          | The panel has a touch interface                                 |
-| TOUCH_USES_GT911         | Touch uses the GT911 capacitive touch controller                |
-| TOUCH_USES_CST816S       | Touch uses the CST816S capacitive touch controller              |
-| TOUCH_USES_XPT2046       | Touch uses the XPT2046 resistive touch controller               |
-|                          |                                                                 |
-| type_I2C_HOST            | The I2C host to use for the touch controller eg. GT911_i2C_HOST |
-| type_I2C_SDA             | I2C Data                                                        |
-| type_I2C_SCL             | I2C Clock                                                       |
-| type_RST                 | GPIO for the ReSeT                                              |
-| type_INT                 | GPIO for the INTerrupt                                          |
-|                          |                                                                 |
-| type_SPI_HOST            | The SPI host to use for the touch driver, eg. XPT2046_SPI_HOST  |
-| type_SPI_MOSI            | SPI MOSI                                                        |
-| type_SPI_MISO            | SPI MISO                                                        |
-| type_SPI_SCLK            | SPI SCLK                                                        |
-| type_CS                  | GPIO for the Chip Select                                        |
-| type_DC                  | GPIO for the Data or Command                                    |
-| type_RST                 | GPIO for the Reset                                              |
-| type_RST                 | GPIO for the Reset                                              |
-| type_INT                 | GPIO for the INTerrupt                                          |
-|                          |                                                                 |
-| TOUCH_SWAP_XY            | Swap horizontally and vertically                                |
-| TOUCH_MIRROR_X           | Swap the touch horizontally                                     |
-| TOUCH_MIRROR_Y           | Swap the touch vertically                                       |
-|                          |                                                                 |
-| BOARD_HAS_TF             | The board has a TF slot                                         |
-| TF_CS                    | GPIO for the TF slot Chip Select                                |
-| TF_SPI_MOSI              | SPI MOSI for the TF slot                                        |
-| TF_SPI_MISO              | SPI MISO for the TF slot                                        |
-| TF_SPI_SCLK              | SPI SCLK for the TF slot                                        |
-|                          |                                                                 |
-| BOARD_HAS_RGB_LED        | The board has an RGB led                                        |
-| RGB_LED_R                | GPIO for the red LED                                            |
-| RGB_LED_G                | GPIO for the green LED                                          |
-| RGB_LED_B                | GPIO for the blue LED                                           |
-|                          |                                                                 |
-| BOARD_HAS_CDS            | The board has a CdS resistive light resistor                    |
-| CDS                      | Analogue GPIO input of the CDS sensor                           |
-|                          |                                                                 |
-| BOARD_HAS_SPEAK          | The board has an onboard amplifier for a speaker                |
-| SPEAK                    | GPIO of the SPEAKer                                             |
-|                          |                                                                 |
-| BOARD_HAS_RELAY1         | The board has relay 1                                           |
-| RELAY_1                  | GPIO of the first relay                                         |
-| BOARD_HAS_RELAY2         | The board has relay 1                                           |
-| RELAY_2                  | GPIO of the second relay                                        |
-| BOARD_HAS_RELAY3         | The board has relay 1                                           |
-| RELAY_3                  | GPIO of the third relay                                         |
+| Define                    | Description                                                     |
+| ------------------------  | --------------------------------------------------------------- |
+| ESP32_wwhhS0ddN/R/C       | The board name, e.g. 2423S012C                                  |
+|                           |                                                                 |
+| BOARD_HAS_PSRAM           | The boards has PSRAM                                            |
+|                           |                                                                 |
+| BUTTON_BOOT               | GPIO of the BOOT pushbutton                                     |
+|                           |                                                                 |
+| DISPLAY_ST7701_PAR        | Display uses the ST7701 driver (Parallel)                       |
+| DISPLAY_ST7789_SPI        | Display uses the ST7789 driver (SPI)                            |
+| DISPLAY_ST7789_I80        | Display uses the ST7789 driver (I80 mode)                       |
+| DISPLAY_ST7796_SPI        | Display uses the ST7796 driver (SPI)                            |
+| DISPLAY_GC9A01_SPI        | Display uses the GC9A01 driver (SPI)                            |
+| DISPLAY_ILI9341_SPI       | Display uses the ILI9341 driver (SPI)                           |
+| DISPLAY_ST7262_PAR        | Display uses the ST7262 driver (Parallel)                       |
+|                           |                                                                 |
+| DISPLAY_WIDTH             | The width of the display panel in pixels                        |
+| DISPLAY_HEIGHT            | The height of the display panel in pixels                       |
+| BCKL_GPIO                 | GPIO of the backlight                                           |
+| type_SPI_HOST             | The SPI host to use for the display driver, eg. ST7789_SPI_HOST |
+| type_SPI_MOSI             | SPI MOSI                                                        |
+| type_SPI_MISO             | SPI MISO                                                        |
+| type_SPI_SCLK             | SPI SCLK                                                        |
+| type_CS                   | GPIO for the Chip Select                                        |
+| type_DC                   | GPIO for the Data or Command                                    |
+| type_RST                  | GPIO for the ReSeT                                              |
+|                           |                                                                 |
+| ST7262_HSYNC_PULSE_WIDTH  | Horizontal pulse width                                          |
+| ST7262_HSYNC_BACK_PORCH   | Horizontal back porch                                           |
+| ST7262_HSYNC_FRONT_PORCH  | Horizontal front porch                                          |
+| ST7262_VSYNC_PULSE_WIDTH  | Vertical pulse width                                            |
+| ST7262_VSYNC_BACK_PORCH   | Vertical back porch                                             |
+| ST7262_VSYNC_FRONT_PORCH  | Vertical front porch                                            |
+| ST7262_HSYNC              | GPIO of the horizontal synch                                    |
+| ST7701_HSYNC_IDLE_LOW     | 1 if the horizontal sync is low on idle                         |
+| ST7262_VSYNC              | GPIO of the vertical synch                                      |
+| ST7701_VSYNC_IDLE_LOW     | 1 if the vertical sync is low on idle                           |
+| ST7262_DE                 | GPIO for the Data Enable                                        |
+| ST7262_PCLK               | GPIO for the Pixel CLocK                                        |
+| ST7701_PCLK_ACTIVE_NEG    | 1 if the Pixel clock is active when negative                    |
+| ST7701_PCLK_IDLE_HIGH     | 1 if the pixel clock is idle when high                          |
+| ST7701_PCLK_HZ            | Frequency in Hertz of the pixel clock                           |
+| ST7262_R0                 | GPIO for the red bit 0                                          |
+| ST7262_R1                 | GPIO for the red bit 1                                          |
+| ST7262_R2                 | GPIO for the red bit 2                                          |
+| ST7262_R3                 | GPIO for the red bit 3                                          |
+| ST7262_R4                 | GPIO for the red bit 4                                          |
+| ST7262_G0                 | GPIO for the green bit 0                                        |
+| ST7262_G1                 | GPIO for the green bit 1                                        |
+| ST7262_G2                 | GPIO for the green bit 2                                        |
+| ST7262_G3                 | GPIO for the green bit 3                                        |
+| ST7262_G4                 | GPIO for the green bit 4                                        |
+| ST7262_G5                 | GPIO for the green bit 5                                        |
+| ST7262_B0                 | GPIO for the blue bit 0                                         |
+| ST7262_B1                 | GPIO for the blue bit 1                                         |
+| ST7262_B2                 | GPIO for the blue bit 2                                         |
+| ST7262_B3                 | GPIO for the blue bit 3                                         |
+| ST7262_B4                 | GPIO for the blue bit 4                                         |
+|                           |                                                                 |
+| DISPLAY_SWAP_XY           | Swap the X and Y axes for the panel                             |
+| DISPLAY_MIRROR_X          | Mirror the panel horizontally                                   |
+| DISPLAY_MIRROR_Y          | Mirror the panel vertically                                     |
+| DISPLAY_GAP_X             | The horizontal gap in pixels before the panel                   |
+| DISPLAY_GAP_Y             | The vertical gap in pixels before the panel                     |
+| DISPLAY_SOFTWARE_ROTATION | No hardware rotation in driver so use software rotation          |
+|                           |                                                                 |
+| BOARD_HAS_TOUCH           | The panel has a touch interface                                 |
+| TOUCH_USES_GT911          | Touch uses the GT911 capacitive touch controller                |
+| TOUCH_USES_CST816S        | Touch uses the CST816S capacitive touch controller              |
+| TOUCH_USES_XPT2046        | Touch uses the XPT2046 resistive touch controller               |
+|                           |                                                                 |
+| type_I2C_HOST             | The I2C host to use for the touch controller eg. GT911_i2C_HOST |
+| type_I2C_SDA              | I2C Data                                                        |
+| type_I2C_SCL              | I2C Clock                                                       |
+| type_RST                  | GPIO for the ReSeT                                              |
+| type_INT                  | GPIO for the INTerrupt                                          |
+|                           |                                                                 |
+| type_SPI_HOST             | The SPI host to use for the touch driver, eg. XPT2046_SPI_HOST  |
+| type_SPI_MOSI             | SPI MOSI                                                        |
+| type_SPI_MISO             | SPI MISO                                                        |
+| type_SPI_SCLK             | SPI SCLK                                                        |
+| type_CS                   | GPIO for the Chip Select                                        |
+| type_DC                   | GPIO for the Data or Command                                    |
+| type_RST                  | GPIO for the Reset                                              |
+| type_RST                  | GPIO for the Reset                                              |
+| type_INT                  | GPIO for the INTerrupt                                          |
+|                           |                                                                 |
+| TOUCH_SWAP_XY             | Swap horizontally and vertically                                |
+| TOUCH_MIRROR_X            | Swap the touch horizontally                                     |
+| TOUCH_MIRROR_Y            | Swap the touch vertically                                       |
+|                           |                                                                 |
+| BOARD_HAS_TF              | The board has a TF slot                                         |
+| TF_CS                     | GPIO for the TF slot Chip Select                                |
+| TF_SPI_MOSI               | SPI MOSI for the TF slot                                        |
+| TF_SPI_MISO               | SPI MISO for the TF slot                                        |
+| TF_SPI_SCLK               | SPI SCLK for the TF slot                                        |
+|                           |                                                                 |
+| BOARD_HAS_RGB_LED         | The board has an RGB led                                        |
+| RGB_LED_R                 | GPIO for the red LED                                            |
+| RGB_LED_G                 | GPIO for the green LED                                          |
+| RGB_LED_B                 | GPIO for the blue LED                                           |
+|                           |                                                                 |
+| BOARD_HAS_CDS             | The board has a CdS resistive light resistor                    |
+| CDS                       | Analogue GPIO input of the CDS sensor                           |
+|                           |                                                                 |
+| BOARD_HAS_SPEAK           | The board has an onboard amplifier for a speaker                |
+| SPEAK                     | GPIO of the SPEAKer                                             |
+|                           |                                                                 |
+| BOARD_HAS_RELAY1          | The board has relay 1                                           |
+| RELAY_1                   | GPIO of the first relay                                         |
+| BOARD_HAS_RELAY2          | The board has relay 1                                           |
+| RELAY_2                   | GPIO of the second relay                                        |
+| BOARD_HAS_RELAY3          | The board has relay 1                                           |
+| RELAY_3                   | GPIO of the third relay                                         |
 
 ## PSRAM
 
