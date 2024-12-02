@@ -172,6 +172,15 @@ The table below provides some explanation of the variable names. These definitio
 | BOARD_HAS_RELAY3          | The board has relay 1                                           |
 | RELAY_3                   | GPIO of the third relay                                         |
 
+## PCLK
+
+PCLK = HFL * VFL * RR
+HFL = Horizontal Frame Length = Active horizontal video (e.g. 800 pixels) + horizontal blanking
+VFL = Vertical Frame Length = Active vertical video (eg. 600 pixels) + vertical blanking
+RR = Refresh rate (50, 60, 75Hz...)
+
+Much more to be learned at: [VESA = Generalized Timing Formula Standard](https://glenwing.github.io/docs/VESA-GTF-1.1.pdf)
+
 ## PSRAM
 
 At boot the ESP32 has approx 315Kb usable memory (from the 520Kb present). Displays with a controller do not have an internal frame buffer to save the state of the display. However, if the display is using the direct 16bits parallel connection, there is no controller and the contents of the RAM is copied to the display at a fast rate. This buffer is allocated from the memory of the ESP32.
