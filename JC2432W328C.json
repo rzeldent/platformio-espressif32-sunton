@@ -6,7 +6,7 @@
     "core": "esp32",
     "extra_flags": [
       "'-D ARDUINO_ESP32_DEV'",
-      "'-D ESP32_2432W328C'",
+      "'-D JC2432W328C'",
       "'-D DISPLAY_WIDTH=240'",
       "'-D DISPLAY_HEIGHT=320'",
       "'-D LVGL_BUFFER_PIXELS=(DISPLAY_WIDTH*DISPLAY_HEIGHT/4)'",
@@ -105,7 +105,7 @@
     "arduino",
     "espidf"
   ],
-  "name": "esp32-2432W328C",
+  "name": "JC2432W328C",
   "upload": {
     "flash_size": "4MB",
     "maximum_ram_size": 327680,
