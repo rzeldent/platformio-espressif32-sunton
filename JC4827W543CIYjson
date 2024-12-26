@@ -13,7 +13,7 @@
       "'-D ARDUINO_RUNNING_CORE=1'",
       "'-D ARDUINO_EVENT_RUNNING_CORE=1'",
       "'-D ARDUINO_USB_CDC_ON_BOOT=0'",
-      "'-D JC4827W543C'",
+      "'-D JC4827W543CIY'",
       "'-D DISPLAY_WIDTH=480'",
       "'-D DISPLAY_HEIGHT=272'",
       "'-D LVGL_BUFFER_PIXELS=(DISPLAY_WIDTH*DISPLAY_HEIGHT)'",
@@ -104,7 +104,7 @@
     "arduino",
     "espidf"
   ],
-  "name": "JC4827W543C",
+  "name": "JC4827W543CIY",
   "upload": {
     "flash_size": "16MB",
     "maximum_ram_size": 327680,
