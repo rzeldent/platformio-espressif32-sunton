@@ -119,7 +119,7 @@
     "maximum_ram_size": 327680,
     "maximum_size": 4194304,
     "require_upload_port": true,
-    "speed": 115200
+    "speed": 460800
   },
   "url": "https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-4.3B",
   "vendor": "Waveshare"
