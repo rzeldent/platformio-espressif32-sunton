@@ -46,7 +46,6 @@
       "'-D DISPLAY_SWAP_XY=false'",
       "'-D DISPLAY_MIRROR_X=false'",
       "'-D DISPLAY_MIRROR_Y=false'",
-	  "'-U DISPLAY_IPS'",
       "'-D BOARD_HAS_TOUCH'",
       "'-D CONFIG_ESP_LCD_TOUCH_MAX_POINTS=1'",
       "'-D CONFIG_ESP_LCD_TOUCH_MAX_BUTTONS=0'",
