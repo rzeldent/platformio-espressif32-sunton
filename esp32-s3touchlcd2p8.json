@@ -1,0 +1,127 @@
+{
+  "build": {
+    "arduino": {
+      "ldscript": "esp32s3_out.ld",
+      "memory_type": "qio_opi"
+    },
+    "core": "esp32",
+    "extra_flags": [
+      "'-D ARDUINO_ESP32S3_DEV'",
+      "'-D BOARD_HAS_PSRAM'",
+      "'-D ARDUINO_USB_MODE=1'",
+      "'-D ARDUINO_RUNNING_CORE=1'",
+      "'-D ARDUINO_EVENT_RUNNING_CORE=1'",
+      "'-D ARDUINO_USB_CDC_ON_BOOT=0'",
+      "'-D ESP32_S3TOUCHLCD2P8'",
+      "'-D DISPLAY_WIDTH=240'",
+      "'-D DISPLAY_HEIGHT=320'",
+      "'-D LVGL_BUFFER_PIXELS=(DISPLAY_WIDTH*DISPLAY_HEIGHT/4)'",
+      "'-D LVGL_BUFFER_MALLOC_FLAGS=(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)'",
+      "'-D GPIO_BCKL=5'",
+      "'-D DISPLAY_ST7789_SPI'",
+      "'-D ST7789_SPI_HOST=SPI2_HOST'",
+      "'-D ST7789_SPI_DMA_CHANNEL=SPI_DMA_CH_AUTO'",
+      "'-D ST7789_SPI_BUS_MOSI_IO_NUM=45'",
+      "'-D ST7789_SPI_BUS_MISO_IO_NUM=GPIO_NUM_NC'",
+      "'-D ST7789_SPI_BUS_SCLK_IO_NUM=40'",
+      "'-D ST7789_SPI_BUS_QUADWP_IO_NUM=GPIO_NUM_NC'",
+      "'-D ST7789_SPI_BUS_QUADHD_IO_NUM=GPIO_NUM_NC'",
+      "'-D ST7789_SPI_BUS_MAX_TRANSFER_SZ=(LVGL_BUFFER_PIXELS*sizeof(lv_color16_t))'",
+      "'-D ST7789_SPI_BUS_FLAGS=0'",
+      "'-D ST7789_SPI_BUS_INTR_FLAGS=0'",
+      "'-D ST7789_SPI_CONFIG_CS_GPIO_NUM=42'",
+      "'-D ST7789_SPI_CONFIG_DC_GPIO_NUM=41'",
+      "'-D ST7789_SPI_CONFIG_SPI_MODE=SPI_MODE0'",
+      "'-D ST7789_SPI_CONFIG_PCLK_HZ=40000000'",
+      "'-D ST7789_SPI_CONFIG_TRANS_QUEUE_DEPTH=10'",
+      "'-D ST7789_SPI_CONFIG_LCD_CMD_BITS=8'",
+      "'-D ST7789_SPI_CONFIG_LCD_PARAM_BITS=8'",
+      "'-D ST7789_SPI_CONFIG_FLAGS_DC_AS_CMD_PHASE=false'",
+      "'-D ST7789_SPI_CONFIG_FLAGS_DC_LOW_ON_DATA=false'",
+      "'-D ST7789_SPI_CONFIG_FLAGS_OCTAL_MODE=false'",
+      "'-D ST7789_SPI_CONFIG_FLAGS_LSB_FIRST=false'",
+      "'-D ST7789_DEV_CONFIG_RESET_GPIO_NUM=38'",
+      "'-D ST7789_DEV_CONFIG_COLOR_SPACE=ESP_LCD_COLOR_SPACE_RGB'",
+      "'-D ST7789_DEV_CONFIG_BITS_PER_PIXEL=16'",
+      "'-D ST7789_DEV_CONFIG_FLAGS_RESET_ACTIVE_HIGH=false'",
+      "'-D ST7789_DEV_CONFIG_VENDOR_CONFIG=NULL'",
+      "'-D DISPLAY_SWAP_XY=false'",
+      "'-D DISPLAY_MIRROR_X=false'",
+      "'-D DISPLAY_MIRROR_Y=false'",
+      "'-D DISPLAY_IPS'",
+      
+      "'-D BOARD_HAS_TOUCH'",
+      "'-D CONFIG_ESP_LCD_TOUCH_MAX_POINTS=5'",
+      "'-D CONFIG_ESP_LCD_TOUCH_MAX_BUTTONS=0'",
+      
+
+
+      "'-D BOARD_HAS_TF'",
+      "'-D TF_CS=42'",
+      "'-D TF_SPI_MOSI=45'",
+      "'-D TF_SPI_SCLK=40'",
+      "'-D TF_SPI_MISO=-1'",
+      "'-D BOARD_HAS_RGB_LED=0'",
+      "'-D BOARD_HAS_SPEAK'",
+      "'-D SPEAK=38'",
+
+
+      "'-D SECTION_STOLEN_FROM_esp32-2432W328C'",
+      "'-D TOUCH_CST328_I2C'",
+      "'-D CST328_IO_I2C_CONFIG_DEV_ADDRESS=0x1A'",
+      "'-D CST328_I2C_HOST=I2C_NUM_0'",
+      "'-D CST328_I2C_CONFIG_SDA_IO_NUM=1'",
+      "'-D CST328_I2C_CONFIG_SCL_IO_NUM=3'",
+      "'-D CST328_I2C_CONFIG_SDA_PULLUP_EN=GPIO_PULLUP_ENABLE'",
+      "'-D CST328_I2C_CONFIG_SCL_PULLUP_EN=GPIO_PULLUP_ENABLE'",
+      "'-D CST328_I2C_CONFIG_MASTER_CLK_SPEED=400000'",
+
+      "'-D CST328_I2C_CONFIG_CLK_FLAGS=0'",
+      "'-D CST328_IO_I2C_CONFIG_CONTROL_PHASE_BYTES=1'",
+      "'-D CST328_IO_I2C_CONFIG_DC_BIT_OFFSET=0'",
+      "'-D CST328_IO_I2C_CONFIG_LCD_CMD_BITS=16'",
+      "'-D CST328_IO_I2C_CONFIG_LCD_PARAM_BITS=8'",
+      "'-D CST328_IO_I2C_CONFIG_FLAGS_DC_LOW_ON_DATA=false'",
+      "'-D CST328_IO_I2C_CONFIG_FLAGS_DISABLE_CONTROL_PHASE=true'",
+
+      "'-D CST328_TOUCH_CONFIG_X_MAX=DISPLAY_WIDTH'",
+      "'-D CST328_TOUCH_CONFIG_Y_MAX=DISPLAY_HEIGHT'",
+      "'-D CST328_TOUCH_CONFIG_RST_GPIO_NUM=2'",
+      "'-D CST328_TOUCH_CONFIG_INT_GPIO_NUM=4'",
+      "'-D CST328_TOUCH_CONFIG_LEVELS_RESET=0'",
+      "'-D CST328_TOUCH_CONFIG_LEVELS_INTERRUPT=1'",
+      "'-D TOUCH_SWAP_XY=false'",
+      "'-D TOUCH_MIRROR_X=false'",
+      "'-D TOUCH_MIRROR_Y=false'"
+
+    ],
+    "f_cpu": "240000000L",
+    "f_flash": "80000000L",
+    "flash_mode": "qio",
+    "mcu": "esp32s3",
+    "variant": "esp32s3"
+  },
+  "connectivity": [
+    "wifi",
+    "bluetooth",
+    "ethernet",
+    "can"
+  ],
+  "debug": {
+    "openocd_board": "esp32s3.cfg"
+  },
+  "frameworks": [
+    "arduino",
+    "espidf"
+  ],
+  "name": "esp32-s3-touch-lcd-2p8",
+  "upload": {
+    "flash_size": "16MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 4194304,
+    "require_upload_port": true,
+    "speed": 115200
+  },
+  "url": "https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-2.8",
+  "vendor": "Waveshare"
+}
