@@ -1,0 +1,67 @@
+{
+    "build": {
+        "arduino": {
+            "ldscript": "esp32c3_out.ld"
+        },
+        "core": "esp32",
+        "f_cpu": "160000000L",
+        "f_flash": "80000000L",
+        "flash_mode": "qio",
+        "extra_flags": [
+            "'-D ARDUINO_ESP32C3_DEV'",
+            "'-D ESP32_C3_OLED'",
+            "'-D DISPLAY_WIDTH=72'",
+            "'-D DISPLAY_HEIGHT=40'",
+            "'-D LVGL_BUFFER_PIXELS=(DISPLAY_WIDTH*DISPLAY_HEIGHT/8)'",
+            "'-D LVGL_BUFFER_MALLOC_FLAGS=(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)'",
+            "'-D DISPLAY_SSD1306'",
+            "'-D SSD1306_I2C_CONFIG_SDA=5'",
+            "'-D SSD1306_I2C_CONFIG_SCL=6'",
+            "'-D SSD1306_I2C_CONFIG_SDA_PULLUP_EN=0'",
+            "'-D SSD1306_I2C_CONFIG_SCL_PULLUP_EN=0'",
+            "'-D SSD1306_I2C_CONFIG_MASTER_CLK_SPEED=400000'",
+            "'-D SSD1306_I2C_CONFIG_CLK_FLAGS=0'",
+            "'-D SSD1306_IO_I2C_CONFIG_DEV_ADDRESS=0x42'",
+            "'-D SSD1306_IO_I2C_CONFIG_CONTROL_PHASE_BYTES=1'",
+            "'-D SSD1306_IO_I2C_CONFIG_DC_BIT_OFFSET=0'",
+            "'-D SSD1306_IO_I2C_CONFIG_LCD_CMD_BITS=8'",
+            "'-D SSD1306_IO_I2C_CONFIG_LCD_PARAM_BITS=8'",
+            "'-D SSD1306_IO_I2C_CONFIG_FLAGS_DC_LOW_ON_DATA=0'",
+            "'-D SSD1306_IO_I2C_CONFIG_FLAGS_DISABLE_CONTROL_PHASE=0'",
+            "'-D SSD1306_I2C_HOST=I2C_NUM_0'",
+            "'-D DISPLAY_BITS_PER_PIXEL=1'",
+            "'-D SSD1306_DEV_CONFIG_RESET=-1'",
+            "'-D SSD1306_DEV_CONFIG_COLOR_SPACE=ESP_LCD_COLOR_SPACE_MONOCHROME'",
+            "'-D SSD1306_DEV_CONFIG_BITS_PER_PIXEL=1'",
+            "'-D SSD1306_DEV_CONFIG_FLAGS_RESET_ACTIVE_HIGH=0'",
+            "'-D DISPLAY_SWAP_XY=false'",
+            "'-D DISPLAY_MIRROR_X=false'",
+            "'-D DISPLAY_MIRROR_Y=false'",
+            "'-D DISPLAY_GAP_X=30'",
+            "'-D DISPLAY_GAP_Y=12'"
+        ],
+        "mcu": "esp32c3",
+        "variant": "esp32c3"
+    },
+    "connectivity": [
+        "wifi",
+        "bluetooth"
+    ],
+    "debug": {
+        "openocd_target": "esp32c3.cfg"
+    },
+    "frameworks": [
+        "arduino",
+        "espidf"
+    ],
+    "name": "esp32-c3-oled",
+    "upload": {
+        "flash_size": "4MB",
+        "maximum_ram_size": 327680,
+        "maximum_size": 4194304,
+        "require_upload_port": true,
+        "speed": 460800
+    },
+    "url": "https://www.aliexpress.com/item/1005009886577566.html",
+    "vendor": "Great Bobot"
+}
