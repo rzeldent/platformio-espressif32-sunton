@@ -20,13 +20,7 @@
       "'-D DISPLAY_BCKL=5'",
       "'-D DISPLAY_ST7789_SPI'",
       "'-D ST7789_SPI_HOST=SPI2_HOST'",
-
       "'-D ST7789_SPI_DMA_CHANNEL=SPI_DMA_CH_AUTO'",
-      "'-D SMARTDISPLAY_DMA_BUFFER_SIZE=DISPLAY_WIDTH*DISPLAY_HEIGHT*2'",
-      "'-D SMARTDISPLAY_DMA_QUEUE_SIZE=12'",
-      "'-D SMARTDISPLAY_DMA_CHUNK_THRESHOLD=2048'",
-      "'-D SMARTDISPLAY_DMA_TIMEOUT_MS=1500'",
-
       "'-D ST7789_SPI_BUS_MOSI=45'",
       "'-D ST7789_SPI_BUS_MISO=GPIO_NUM_NC'",
       "'-D ST7789_SPI_BUS_SCLK=40'",
@@ -55,25 +49,20 @@
       "'-D DISPLAY_MIRROR_X=false'",
       "'-D DISPLAY_MIRROR_Y=false'",
       "'-D DISPLAY_IPS'",
-
       "'-D BOARD_HAS_TOUCH'",
       "'-D CONFIG_ESP_LCD_TOUCH_MAX_POINTS=5'",
       "'-D CONFIG_ESP_LCD_TOUCH_MAX_BUTTONS=0'",
-
       "'-D BOARD_HAS_TF'",
       "'-D TF_CS=21'",
       "'-D TF_SPI_MOSI=17'",
       "'-D TF_SPI_SCLK=14'",
       "'-D TF_SPI_MISO=16'",
-
       "'-D BOARD_HAS_RGB_LED=0'",
       "'-D RGB_LED_R=255'",
       "'-D RGB_LED_G=255'",
       "'-D RGB_LED_B=255'",
-
       "'-D BOARD_HAS_SPEAK'",
       "'-D SPEAK=38'",
-
       "'-D TOUCH_CST328_I2C'",
       "'-D CST328_IO_I2C_CONFIG_DEV_ADDRESS=0x1A'",
       "'-D CST328_I2C_HOST=I2C_NUM_0'",
@@ -98,13 +87,11 @@
       "'-D TOUCH_SWAP_XY=false'",
       "'-D TOUCH_MIRROR_X=false'",
       "'-D TOUCH_MIRROR_Y=false'",
-
       "'-D BOARD_HAS_IMU'",
       "'-D IMU_SDA=11'",
       "'-D IMU_SCL=10'",
       "'-D IMU_INT1=13'",
       "'-D IMU_INT2=12'",
-
       "'-D BOARD_HAS_AUDIO'",
       "'-D I2S_BCK=18'",
       "'-D I2S_LRCK=38'",
