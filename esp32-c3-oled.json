@@ -10,8 +10,8 @@
         "extra_flags": [
             "'-D ARDUINO_ESP32C3_DEV'",
             "'-D ESP32_C3_OLED'",
-            "'-D DISPLAY_WIDTH=72'",
-            "'-D DISPLAY_HEIGHT=40'",
+            "'-D DISPLAY_WIDTH=128'",
+            "'-D DISPLAY_HEIGHT=64'",
             "'-D LVGL_BUFFER_PIXELS=(DISPLAY_WIDTH*DISPLAY_HEIGHT/8)'",
             "'-D LVGL_BUFFER_MALLOC_FLAGS=(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)'",
             "'-D DISPLAY_SSD1306'",
@@ -63,5 +63,5 @@
         "speed": 460800
     },
     "url": "https://www.aliexpress.com/item/1005009886577566.html",
-    "vendor": "Great Bobot"
+    "vendor": "ABRobot"
 }
