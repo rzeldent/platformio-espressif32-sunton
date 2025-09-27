@@ -65,16 +65,16 @@ The table below provides some explanation of the variable names. These definitio
 |                           |                                                                 |
 | BUTTON_BOOT               | GPIO of the BOOT pushbutton                                     |
 |                           |                                                                 |
-| DISPLAY_ST7701_PAR        | Display uses the ST7701 driver (Parallel)                       |
-| DISPLAY_ST7789_SPI        | Display uses the ST7789 driver (SPI)                            |
-| DISPLAY_ST7789_I80        | Display uses the ST7789 driver (I80 mode)                       |
-| DISPLAY_ST7796_SPI        | Display uses the ST7796 driver (SPI)                            |
-| DISPLAY_GC9A01_SPI        | Display uses the GC9A01 driver (SPI)                            |
-| DISPLAY_ILI9341_SPI       | Display uses the ILI9341 driver (SPI)                           |
-| DISPLAY_ST7262_PAR        | Display uses the ST7262 driver (Parallel)                       |
+| PANEL_ST7701_PAR        | Display uses the ST7701 driver (Parallel)                       |
+| PANEL_ST7789_SPI        | Display uses the ST7789 driver (SPI)                            |
+| PANEL_ST7789_I80        | Display uses the ST7789 driver (I80 mode)                       |
+| PANEL_ST7796_SPI        | Display uses the ST7796 driver (SPI)                            |
+| PANEL_GC9A01_SPI        | Display uses the GC9A01 driver (SPI)                            |
+| PANEL_ILI9341_SPI       | Display uses the ILI9341 driver (SPI)                           |
+| PANEL_ST7262_PAR        | Display uses the ST7262 driver (Parallel)                       |
 |                           |                                                                 |
-| DISPLAY_WIDTH             | The width of the display panel in pixels                        |
-| DISPLAY_HEIGHT            | The height of the display panel in pixels                       |
+| LVGL_HOR_RES             | The width of the display panel in pixels                        |
+| LVGL_VER_RES            | The height of the display panel in pixels                       |
 | BCKL_GPIO                 | GPIO of the backlight                                           |
 | type_SPI_HOST             | The SPI host to use for the display driver, eg. ST7789_SPI_HOST |
 | type_SPI_MOSI             | SPI MOSI                                                        |
@@ -121,7 +121,7 @@ The table below provides some explanation of the variable names. These definitio
 | DISPLAY_MIRROR_Y          | Mirror the panel vertically                                     |
 | DISPLAY_GAP_X             | The horizontal gap in pixels before the panel                   |
 | DISPLAY_GAP_Y             | The vertical gap in pixels before the panel                     |
-| DISPLAY_SOFTWARE_ROTATION | No hardware rotation in driver so use software rotation          |
+| LVGL_DISPLAY_SOFTWARE_ROTATION | No hardware rotation in driver so use software rotation          |
 |                           |                                                                 |
 | BOARD_HAS_TOUCH           | The panel has a touch interface                                 |
 | TOUCH_USES_GT911          | Touch uses the GT911 capacitive touch controller                |
