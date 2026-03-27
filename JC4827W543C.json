@@ -77,8 +77,8 @@
       "'-D GT911_TOUCH_CONFIG_LEVELS_RESET=0'",
       "'-D GT911_TOUCH_CONFIG_LEVELS_INTERRUPT=0'",
       "'-D TOUCH_SWAP_XY=false'",
-      "'-D TOUCH_MIRROR_X=true'",
-      "'-D TOUCH_MIRROR_Y=true'"
+      "'-D TOUCH_MIRROR_X=false'",
+      "'-D TOUCH_MIRROR_Y=false'"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
@@ -112,6 +112,6 @@
     "require_upload_port": true,
     "speed": 460800
   },
-  "url": "https://www.aliexpress.com/item/1005006729657546.html",
+  "url": "https://www.aliexpress.com/item/1005006729377800.html",
   "vendor": "Guition"
 }
