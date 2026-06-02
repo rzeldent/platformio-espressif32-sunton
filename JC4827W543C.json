@@ -78,7 +78,12 @@
       "'-D GT911_TOUCH_CONFIG_LEVELS_INTERRUPT=0'",
       "'-D TOUCH_SWAP_XY=false'",
       "'-D TOUCH_MIRROR_X=false'",
-      "'-D TOUCH_MIRROR_Y=false'"
+      "'-D TOUCH_MIRROR_Y=false'",
+      "'-D BOARD_HAS_TF'",
+      "'-D TF_CS=10'",
+      "'-D TF_SPI_MOSI=11'",
+      "'-D TF_SPI_SCLK=12'",
+      "'-D TF_SPI_MISO=13'"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
