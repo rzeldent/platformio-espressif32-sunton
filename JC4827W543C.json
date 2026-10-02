@@ -20,7 +20,7 @@
       "'-D DISPLAY_BCKL=1'",
       "'-D DISPLAY_IPS'",
       "'-D DISPLAY_NV3041A_QSPI'",
-                              "'-D NV3041A_SPI_HOST=SPI2_HOST'",
+"'-D NV3041A_SPI_HOST=SPI2_HOST'",
       "'-D NV3041A_SPI_BUS_PCLK=47'",
       "'-D NV3041A_SPI_BUS_DATA0=21'",
       "'-D NV3041A_SPI_BUS_DATA1=48'",
@@ -73,7 +73,12 @@
       "'-D GT911_TOUCH_CONFIG_LEVELS_INTERRUPT=0'",
       "'-D TOUCH_SWAP_XY=false'",
       "'-D TOUCH_MIRROR_X=false'",
-      "'-D TOUCH_MIRROR_Y=false'"
+      "'-D TOUCH_MIRROR_Y=false'",
+      "'-D BOARD_HAS_TF'",
+      "'-D TF_CS=10'",
+      "'-D TF_SPI_MOSI=11'",
+      "'-D TF_SPI_SCLK=12'",
+      "'-D TF_SPI_MISO=13'"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
