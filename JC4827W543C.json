@@ -20,7 +20,7 @@
       "'-D DISPLAY_BCKL=1'",
       "'-D DISPLAY_IPS'",
       "'-D DISPLAY_NV3041A_QSPI'",
-                              "'-D NV3041A_SPI_HOST=SPI2_HOST'",
+      "'-D NV3041A_SPI_HOST=SPI2_HOST'",
       "'-D NV3041A_SPI_BUS_PCLK=47'",
       "'-D NV3041A_SPI_BUS_DATA0=21'",
       "'-D NV3041A_SPI_BUS_DATA1=48'",
