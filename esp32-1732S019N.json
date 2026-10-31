@@ -9,10 +9,8 @@
     "extra_flags": [
       "'-D ARDUINO_ESP32S3_DEV'",
       "'-D BOARD_HAS_PSRAM'",
-      "'-D ARDUINO_USB_MODE=1'",
       "'-D ARDUINO_RUNNING_CORE=1'",
       "'-D ARDUINO_EVENT_RUNNING_CORE=1'",
-      "'-D ARDUINO_USB_CDC_ON_BOOT=0'",
       "'-D ESP32_1732S019N'",
       "'-D DISPLAY_WIDTH=170'",
       "'-D DISPLAY_HEIGHT=320'",
