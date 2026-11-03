@@ -15,7 +15,6 @@
       "'-D DISPLAY_ST7789_SPI'",
       "'-D DISPLAY_IPS'",
       "'-D ST7789_SPI_HOST=SPI2_HOST'",
-
       "'-D ST7789_SPI_BUS_MOSI=13'",
       "'-D ST7789_SPI_BUS_MISO=12'",
       "'-D ST7789_SPI_BUS_SCLK=14'",
